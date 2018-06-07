@@ -1,0 +1,32 @@
+.main-content {
+    position: relative;
+    z-index: 10;
+    background-color: lightgray;
+    margin-top: 950px;
+}
+
+.top-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+}
+
+.top-image img {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    #content {
+        padding-top: 56px;
+    }
+
+    .top-image {
+        margin-top: 56px;
+    }
+
+    .main-content {
+        margin-top: 270px;
+    }
+}

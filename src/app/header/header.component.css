@@ -4,3 +4,22 @@
         overflow: hidden;
     }
 }
+
+@media (min-width: 576px) {
+    .navbar {
+        padding: 20px 0;
+    }
+    .navbar:not(.dark-background-scroll)  {
+        background-color: transparent !important;
+    }
+
+    .navbar:not(.dark-background-scroll) .nav-link  {
+        font-weight: bold;
+        color: black;
+        font-size: 25px;
+    }
+}
+
+.navbar, .nav-link {
+    transition: all 0.5s ease;
+}
