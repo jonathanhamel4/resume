@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#">Brand/LogoA</a>
+  <button class="navbar-toggler" (click)="toggleCollapse()" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div id="myNavMenu" class="navbar-collapse collapse show" [@slideInOut]='state'>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
