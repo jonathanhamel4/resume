@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { PersonaComponent } from './persona/persona.component';
 import { FooterComponent } from './footer/footer.component';
+import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { VolunteeringComponent } from './volunteering/volunteering.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     PersonaComponent,
-    FooterComponent
+    FooterComponent,
+    EducationComponent,
+    SkillsComponent,
+    VolunteeringComponent
   ],
   imports: [
     BrowserModule,
