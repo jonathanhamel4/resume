@@ -4,16 +4,14 @@
 }
 
 .flex-row {
-    margin-top:60px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
     flex-wrap: nowrap;
 }
 
 .img-persona {
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
 }
 
 .img-persona img {
