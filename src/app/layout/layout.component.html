@@ -1,0 +1,20 @@
+<clr-main-container>
+  <clr-header class="fixed-nav">
+    <div class="branding">
+      <a class="nav-link">
+        <clr-icon shape="vm-bug"></clr-icon>
+      </a>
+    </div>
+    <div class="header-nav" [clr-nav-level]="1">
+      <a href="#about" class="nav-link nav-text">About</a>
+      <a class="nav-link nav-text">Education</a>
+      <a class="nav-link nav-text">Skills</a>
+      <a class="nav-link nav-text">Volunteering</a>
+    </div>
+  </clr-header>
+  <div class="content-container">
+    <div>
+      <ng-content select="[main-content]"></ng-content>
+    </div>
+  </div>
+</clr-main-container>

@@ -1,0 +1,29 @@
+#about {
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.flex-row {
+    margin-top:60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    flex-wrap: nowrap;
+}
+
+.img-persona {
+    margin: 0 auto;
+}
+
+.img-persona img {
+    width: 300px;
+    border-radius: 50%;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-row {
+        flex-wrap: wrap;
+    }
+}

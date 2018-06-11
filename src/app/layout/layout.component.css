@@ -1,0 +1,11 @@
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .header .header-nav {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+}
