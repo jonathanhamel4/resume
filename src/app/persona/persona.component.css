@@ -27,3 +27,25 @@
         flex-wrap: wrap;
     }
 }
+
+
+.flex-header-with-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.flex-header-with-title a {
+    color: unset;
+}
+
+.flex-header-with-title i {
+    font-size: 1.5em;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.flex-header-with-title i:hover {
+    color: #7b9dbb;
+}

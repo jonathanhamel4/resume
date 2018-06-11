@@ -1,0 +1,37 @@
+.footer {
+    background-color: #5d5b5b;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.footer p {
+    color: white;
+    margin: 5px;
+}
+
+.footer .fa-heart {
+    color: red;
+}
+
+.footer .icon-row {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.footer .icon-row i {
+    margin: 5px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.footer .icon-row i:hover {
+    color: #7b9dbb;
+}
+
+a {
+    color: unset;
+}

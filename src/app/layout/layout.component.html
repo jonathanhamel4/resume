@@ -6,10 +6,7 @@
       </a>
     </div>
     <div class="header-nav" [clr-nav-level]="1">
-      <a href="#about" class="nav-link nav-text">About</a>
-      <a class="nav-link nav-text">Education</a>
-      <a class="nav-link nav-text">Skills</a>
-      <a class="nav-link nav-text">Volunteering</a>
+      <a *ngFor="let link of links" href="{{link.href}}" class="nav-link nav-text">{{link.display}}</a>
     </div>
   </clr-header>
   <div class="content-container">

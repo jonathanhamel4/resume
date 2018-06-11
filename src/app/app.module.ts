@@ -5,12 +5,14 @@ import { ClarityModule } from '@clr/angular';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { PersonaComponent } from './persona/persona.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    PersonaComponent
+    PersonaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

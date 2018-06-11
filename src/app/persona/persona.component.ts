@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LinkService } from '../services/link.service';
+import { Link } from '../../models/link';
 
 @Component({
   selector: 'app-persona',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonaComponent implements OnInit {
 
-  constructor() { }
+  public socialLinks: Link[] = [];
+
+  constructor(private linkService: LinkService) { }
 
   ngOnInit() {
+    this.socialLinks = this.linkService.socialLinks;
   }
 
 }
