@@ -1,11 +1,5 @@
-.fixed-nav {
-    position: fixed;
-    width: 100%;
-}
-
 .main-container {
-    height: auto;
-    background: unset;
+
 }
 
 @media screen and (min-width: 768px) {

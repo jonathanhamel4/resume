@@ -1,5 +1,5 @@
 <clr-main-container>
-  <clr-header class="fixed-nav">
+  <clr-header>
     <div class="branding">
       <a class="nav-link">
         <clr-icon shape="vm-bug"></clr-icon>
@@ -10,8 +10,11 @@
     </div>
   </clr-header>
   <div class="content-container">
-    <div>
-      <ng-content select="[main-content]"></ng-content>
+    <div style="overflow-y: auto">
+      <div class="content-area">
+        <ng-content select="[main-content]"></ng-content>
+      </div>
+      <ng-content select="[footer]"></ng-content>
     </div>
   </div>
 </clr-main-container>

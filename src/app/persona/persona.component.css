@@ -1,6 +1,6 @@
 #about {
-    padding: 20px;
     background-color: lightgray;
+    padding: 1rem;
 }
 
 .flex-row {
@@ -11,7 +11,7 @@
 }
 
 .img-persona {
-    margin: 60px auto 0 auto;
+    margin: 20px auto;
 }
 
 .img-persona img {

@@ -1,3 +1,28 @@
-<div id="skills">
-  <h3 class="anchor-offset">Personal Skills</h3>
+<div id="skills" class="card">
+  <div class="card-block">
+    <h3>Skills</h3>
+
+    <div class="flex-row">
+      <div class="skill-column">
+        <h5>Soft Skills</h5>
+        <div *ngFor="let skill of softSkills">
+            <p>{{skill.display}}</p>
+            <div class="progress">
+                <progress max="100" value="{{skill.value}}" data-displayval="0%"></progress>
+            </div>
+            
+        </div>
+      </div>
+      <div class="skill-column">
+        <h5>Hard Skills</h5>
+        <div *ngFor="let skill of hardSkills">
+            <p>{{skill.display}}</p>
+            <div class="progress">
+                <progress max="100" value="{{skill.value}}" data-displayval="0%"></progress>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
