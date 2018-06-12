@@ -2,6 +2,11 @@
     outline: unset;
 }
 
+#header-logo {
+    width:40px;
+    border-radius: 7px;
+}
+
 @media screen and (min-width: 768px) {
     .header .header-nav {
         flex-grow: 1;
