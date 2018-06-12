@@ -6,21 +6,32 @@
       <div class="skill-column">
         <h5>Soft Skills</h5>
         <div *ngFor="let skill of softSkills">
-            <p>{{skill.display}}</p>
-            <div class="progress">
-                <progress max="100" value="{{skill.value}}" data-displayval="0%"></progress>
-            </div>
-            
+          <p>
+            <span>{{skill.display}}</span>
+            <span *ngIf="skill.tooltip" class="tooltip" [ngClass]="skill.tooltipClass ? skill.tooltipClass : 'tooltip-xs'">
+              <clr-icon shape="info-circle" size="24"></clr-icon>
+              <span class="tooltip-content">{{skill.tooltip}}</span>
+            </span>
+          </p>
+          <div class="progress">
+            <progress max="100" value="{{skill.value}}"></progress>
+          </div>
+
         </div>
       </div>
       <div class="skill-column">
         <h5>Hard Skills</h5>
         <div *ngFor="let skill of hardSkills">
-            <p>{{skill.display}}</p>
-            <div class="progress">
-                <progress max="100" value="{{skill.value}}" data-displayval="0%"></progress>
-            </div>
-            
+          <p>
+            <span>{{skill.display}}</span>
+            <span *ngIf="skill.tooltip" class="tooltip" [ngClass]="skill.tooltipClass ? skill.tooltipClass : 'tooltip-xs'">
+              <clr-icon shape="info-circle" size="24"></clr-icon>
+              <span class="tooltip-content">{{skill.tooltip}}</span>
+            </span>
+          </p>
+          <div class="progress">
+            <progress max="100" value="{{skill.value}}"></progress>
+          </div>
         </div>
       </div>
     </div>

@@ -15,6 +15,11 @@
 
 .footer .fa-heart {
     color: red;
+    transition: color 0.3s ease;
+}
+
+.footer .fa-heart:hover {
+    color: #D4AF37;
 }
 
 .footer .icon-row {
