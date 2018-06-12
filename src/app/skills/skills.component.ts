@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Skill } from '../../models/skill';
 
 @Component({
@@ -6,19 +6,13 @@ import { Skill } from '../../models/skill';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
 
   public softSkills: Skill[] = [
     { display: 'Leadership', value: 60 } as Skill
-  ]
+  ];
 
   public hardSkills: Skill[] = [
     { display: 'Leadership', value: 60 } as Skill
-  ]
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ];
 }

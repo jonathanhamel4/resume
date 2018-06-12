@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { VolunteeringComponent } from './volunteering/volunteering.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { VolunteeringComponent } from './volunteering/volunteering.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ClarityModule
+    ClarityModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

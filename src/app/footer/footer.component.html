@@ -1,6 +1,12 @@
 <div class="footer">
   <p>Made with
     <i class="fa fa-heart"></i> in Montréal</p>
+  <p class="icon-row latest-sha">
+    <a target="__blank" href="{{(apiService.latestSha | async)?.link}}">
+      <i class="fa fa-github"></i>
+      <span class="sha">{{(apiService.latestSha | async)?.sha}}</span>
+    </a>
+  </p>
   <p class="icon-row">
     <a target="__blank" *ngFor="let link of links" href="{{link.href}}">
       <i [ngClass]="link.icon"></i>
