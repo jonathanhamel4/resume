@@ -2,7 +2,7 @@
   <p>Made with
     <i class="fa fa-heart"></i> in Montréal</p>
   <p class="icon-row">
-    <a *ngFor="let link of links" href="{{link.href}}">
+    <a target="__blank" *ngFor="let link of links" href="{{link.href}}">
       <i [ngClass]="link.icon"></i>
     </a>
   </p>

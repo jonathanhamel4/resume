@@ -18,11 +18,18 @@
     width: 300px;
     border-radius: 50%;
     padding: 0 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {
     .flex-row {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .img-persona img {
+        width: 200px;
     }
 }
 
