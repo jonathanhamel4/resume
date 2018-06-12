@@ -1,0 +1,20 @@
+{
+    "SECTIONS": {
+        "ABOUT": "À Propos",
+        "EDUCATION": "Éducation",
+        "SKILLS": "Compétences",
+        "VOLUNTEERING": "Bénévolat"
+    },
+    "EDUCATION": {
+        "CONCORDIA": {
+            "SCHOOL": "Université Concordia (2012-2017)",
+            "DESC": "Co-op Baccalauréat Génie Locigiel. Gradué avec distinction. Cote Z cumulative de 3.78.",
+            "HONOR": "Honeurs",
+            "HONORS": "<ul class='list compact'><li>Bourse d'étude Stan Heaps - 2017</li><li>Liste du recteur - 2017</li><li>Liste du recteur - 2016</li><li>Société Honorifique Golden Key - 2015</li></ul>"
+        },
+        "CEM": {
+            "SCHOOL": "Collège Édouard-Montpetit (2010-2012)",
+            "DESC": "Diplôme d'Études Collégiales en Sciences Pures et Appliquées."
+        }
+    }
+}

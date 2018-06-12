@@ -4,24 +4,19 @@
     <div class="flex-row">
       <img class="education-img" src="assets/concordia.png" />
       <div class="description">
-        <h4>Concordia University (2012-2017)</h4>
-        <p>Co-op Bachelor of Software Engineering. Graduated with distinction. Cumulative GPA 3.78.</p>
-        <h5>Honors</h5>
-        <ul class="list compact">
-          <li>Stan Heaps Scholarship - 2017</li>
-          <li>Dean's List - 2017</li>
-          <li>Dean's List - 2016</li>
-          <li>Golden Key Honor Society - 2015</li> 
-        </ul>
+        <h4>{{ 'EDUCATION.CONCORDIA.SCHOOL' | translate }}</h4>
+        <p>{{ 'EDUCATION.CONCORDIA.DESC' | translate }}</p>
+        <h5>{{ 'EDUCATION.CONCORDIA.HONOR' | translate }}</h5>
+        <div [innerHTML]="'EDUCATION.CONCORDIA.HONORS' | translate"></div>
       </div>
     </div>
 
     <div class="flex-row">
-        <img class="education-img" src="assets/cem_v_2.jpg" />
-        <div class="description">
-          <h4>Collège Édouard-Montpetit (2010-2012)</h4>
-          <p>Diplôme d'Études Collégiales in Natual Sciences.</p>
-        </div>
+      <img class="education-img" src="assets/cem_v_2.jpg" />
+      <div class="description">
+        <h4>{{ 'EDUCATION.CEM.SCHOOL' | translate }}</h4>
+        <p>{{ 'EDUCATION.CEM.DESC' | translate }}</p>
       </div>
+    </div>
   </div>
 </div>

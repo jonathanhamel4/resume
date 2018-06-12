@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Link } from '../models/link';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
     providedIn: 'root'
@@ -17,4 +18,7 @@ export class LinkService {
         { display: 'Skills', href: '#skills' } as Link,
         { display: 'Volunteering', href: '#volunteering' } as Link,
     ];
+
+    constructor() {
+    }
 }

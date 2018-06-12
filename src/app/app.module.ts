@@ -11,6 +11,14 @@ import { SkillsComponent } from './skills/skills.component';
 import { VolunteeringComponent } from './volunteering/volunteering.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HoverDirective } from '../directives/hover.directive';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -27,7 +35,15 @@ import { HoverDirective } from '../directives/hover.directive';
     BrowserModule,
     BrowserAnimationsModule,
     ClarityModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

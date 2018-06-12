@@ -6,7 +6,8 @@
       </a>
     </div>
     <div class="header-nav" [clr-nav-level]="1">
-      <a *ngFor="let link of links" href="{{link.href}}" class="nav-link nav-text">{{link.display}}</a>
+      <a *ngFor="let link of links" href="{{link.href}}" class="nav-link nav-text">{{ ('SECTIONS.' + link.display.toUpperCase()) | translate}}</a>
+      <a (click)="setCurrentLang()" class="nav-link nav-text">{{currentLang === 'fr' ? 'English' : 'Français'}}</a>
     </div>
   </clr-header>
   <div class="content-container">
