@@ -4,7 +4,7 @@
 
     <div class="flex-row">
       <div class="skill-column">
-        <h5>Soft Skills</h5>
+        <h5>{{ 'SKILLS.SOFT' | translate }}</h5>
         <div *ngFor="let skill of softSkills">
           <p>
             <span>{{ 'SKILLS.' + skill.key.toUpperCase() | translate }}</span>
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="skill-column">
-        <h5>Hard Skills</h5>
+        <h5>{{ 'SKILLS.HARD' | translate }}</h5>
         <div *ngFor="let skill of hardSkills">
           <p>
             <span>{{skill.key}}</span>
