@@ -1,0 +1,49 @@
+{
+    "SECTIONS": {
+        "ABOUT": "About Me",
+        "EDUCATION": "Education",
+        "SKILLS": "Skills",
+        "VOLUNTEERING": "Volunteering"
+    },
+    "EDUCATION": {
+        "CONCORDIA": {
+            "SCHOOL": "Concordia University (2012-2017)",
+            "DESC": "Co-op Bachelor of Software Engineering. Graduated with distinction. Cumulative GPA 3.78.",
+            "HONOR": "Honors",
+            "HONORS": "<ul class='list compact'><li>Stan Heaps Scholarship - 2017</li><li>Dean's List - 2017</li><li>Dean's List - 2016</li><li>Golden Key Honor Society - 2015</li></ul>"
+        },
+        "CEM": {
+            "SCHOOL": "Collège Édouard-Montpetit (2010-2012)",
+            "DESC": "DEC in Pure & Applied Sciences."
+        }
+    },
+    "SKILLS": {
+        "SOFT": "Soft Skills",
+        "HARD": "Hard Skills",
+        "LEADERSHIP": "Leadership",
+        "WORK ETHIC": "Work Ethic",
+        "POSITIVE ATTITUDE": "Positive Attitude",
+        "COMMUNICATION": "Communication",
+        "TIME MANAGEMENT": "Time Management",
+        "PROBLEM-SOLVING SKILLS": "Problem Solving Skills",
+        "TEAM PLAYER": "Team Player",
+        "CONFIDENCE": "Confidence",
+        "LEARN FROM CRITICISM": "Learn from Criticism",
+        "WORK UNDER PRESSURE": "Work under pressure",
+        "ADAPTABILITY": "Adaptability"
+    },
+    "VOLUNTEERING": {
+        "DIABLOS": {
+            "HEADER": "Quarterback Football Coach (2015 & 2018)",
+            "DESC": "Quarterback coach in my hometown football team for the Diablos La Prairie Bantam AAA team. My goals are to make sure that the children are able to reconcile competitive sports and school. A football player has to be dedicated, respectful, organized, perseverent, and much more. That is, our role as football coach, is to lead children to achieve these goals on a football field, and in their personal life. Also, it is to provide a secure environment for football players to enjoy their favorite sport without serious injuries."
+        },
+        "HABITAT": {
+            "HEADER": "Habitat For Humanity (2017)",
+            "DESC": "Founded in 1985, Habitat for Humanity Canada is a national, nonprofit organization working toward a world where everyone has a decent and affordable place to call home."
+        },
+        "MISSION": {
+            "HEADER": "Welcome Hall Mission (2017)",
+            "DESC":"Established in 1892, Welcome Hall Mission has become the largest doorway to help for Montrealers in need. Many programs are available to support the homeless, young single mothers, families and at-risk youth. Providing hope through concrete actions and effective solutions."
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "SECTIONS": {
+        "ABOUT": "À Propos",
+        "EDUCATION": "Éducation",
+        "SKILLS": "Compétences",
+        "VOLUNTEERING": "Bénévolat"
+    },
+    "EDUCATION": {
+        "CONCORDIA": {
+            "SCHOOL": "Université Concordia (2012-2017)",
+            "DESC": "Co-op Baccalauréat Génie Locigiel. Gradué avec distinction. Cote Z cumulative de 3.78.",
+            "HONOR": "Honeurs",
+            "HONORS": "<ul class='list compact'><li>Bourse d'étude Stan Heaps - 2017</li><li>Liste du recteur - 2017</li><li>Liste du recteur - 2016</li><li>Société Honorifique Golden Key - 2015</li></ul>"
+        },
+        "CEM": {
+            "SCHOOL": "Collège Édouard-Montpetit (2010-2012)",
+            "DESC": "Diplôme d'Études Collégiales en Sciences Pures et Appliquées."
+        }
+    },
+    "SKILLS": {
+        "SOFT": "Général",
+        "HARD": "Technique",
+        "LEADERSHIP": "Leadership",
+        "WORK ETHIC": "Éthique de travail",
+        "POSITIVE ATTITUDE": "Attitude positive",
+        "COMMUNICATION": "Communication",
+        "TIME MANAGEMENT": "Gestion du temps",
+        "PROBLEM-SOLVING SKILLS": "Résolution de problème",
+        "TEAM PLAYER": "Joueur d'équipe",
+        "CONFIDENCE": "Confiance",
+        "LEARN FROM CRITICISM": "Apprendre par la critique",
+        "WORK UNDER PRESSURE": "Travailler sous pression",
+        "ADAPTABILITY": "Adaptation"
+    },
+    "VOLUNTEERING": {
+        "DIABLOS": {
+            "HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018)",
+            "DESC": "Entraîneur des Quarts-Arrières au sein de l'équipe Bantam AAA des Diablos de La Prairie. S'assurer que les jeunes se développent une organisation rigide afin de concilier étude et sport de compétition. S'assurer que les jeunes pratiquent le sport de façon sécuritaire afin d'éviter les blessures."
+        },
+        "HABITAT": {
+            "HEADER": "Habitat Pour l'Humanité (2017)",
+            "DESC": "'Notre mission est de mobiliser des bénévoles et des communautés afin de bâtir des demeures abordables et de promouvoir l’achat d’un logement comme moyen de mettre fin au cycle de la pauvreté.'"
+        },
+        "MISSION": {
+            "HEADER": "Mission Bon Accueil (2017)",
+            "DESC":"Fondée en 1892, Mission Bon Accueil est aujourd’hui la plus grande porte d’entrée pour venir en aide aux Montréalais les plus démunis. Une multitude de programmes sont offerts afin d’appuyer les itinérants, les jeunes filles-mères, les familles et les jeunes à risque. Nous redonnons l’espoir par des actions concrètes et des solutions efficaces."
+        }
+    }
+}
