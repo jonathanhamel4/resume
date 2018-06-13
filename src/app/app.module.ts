@@ -14,10 +14,12 @@ import { HoverDirective } from '../directives/hover.directive';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment';
 
+const httpLoaderPrefix = environment.production ? "/resume/assets/i18n/" : "/assets/i18n/";
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http, httpLoaderPrefix);
 }
 
 @NgModule({
