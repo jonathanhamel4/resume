@@ -1,13 +1,13 @@
 <div id="skills" class="card">
   <div class="card-block">
-    <h3>Skills</h3>
+    <h3>{{ 'SECTIONS.SKILLS' | translate }}</h3>
 
     <div class="flex-row">
       <div class="skill-column">
         <h5>Soft Skills</h5>
         <div *ngFor="let skill of softSkills">
           <p>
-            <span>{{skill.display}}</span>
+            <span>{{ 'SKILLS.' + skill.key.toUpperCase() | translate }}</span>
             <span *ngIf="skill.tooltip" class="tooltip" [ngClass]="skill.tooltipClass ? skill.tooltipClass : 'tooltip-xs'">
               <clr-icon shape="info-circle" size="24"></clr-icon>
               <span class="tooltip-content">{{skill.tooltip}}</span>
@@ -23,7 +23,7 @@
         <h5>Hard Skills</h5>
         <div *ngFor="let skill of hardSkills">
           <p>
-            <span>{{skill.display}}</span>
+            <span>{{skill.key}}</span>
             <span *ngIf="skill.tooltip" class="tooltip" [ngClass]="skill.tooltipClass ? skill.tooltipClass : 'tooltip-xs'">
               <clr-icon shape="info-circle" size="24"></clr-icon>
               <span class="tooltip-content">{{skill.tooltip}}</span>

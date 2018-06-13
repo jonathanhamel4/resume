@@ -1,5 +1,6 @@
 export class Skill {
     value: number;
-    display: string;
+    display?: string;
     tooltip?: string;
+    key: string;
 }
