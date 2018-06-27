@@ -5,6 +5,8 @@
         "SKILLS": "Compétences",
         "VOLUNTEERING": "Bénévolat"
     },
+    "VIEW_MORE": "Voir Plus",
+    "VIEW_LESS": "Voir Moins",
     "EDUCATION": {
         "CONCORDIA": {
             "SCHOOL": "Université Concordia (2012-2017)",
@@ -45,5 +47,6 @@
             "HEADER": "Mission Bon Accueil (2017)",
             "DESC":"Fondée en 1892, Mission Bon Accueil est aujourd’hui la plus grande porte d’entrée pour venir en aide aux Montréalais les plus démunis. Une multitude de programmes sont offerts afin d’appuyer les itinérants, les jeunes filles-mères, les familles et les jeunes à risque. Nous redonnons l’espoir par des actions concrètes et des solutions efficaces."
         }
-    }
+    },
+    "ABOUT": "Ingénieur Logiciel gradué de l’Université Concordia en 2017 ayant une grande motivation. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nUtilisation intensive d’Ansible et de Capistrano lors du déploiement d’applications et de la maintenance d’environments. Également, je dispose de plusieurs années d’expériences en développement utilisant l’approche MEAN (Mongo, Express, Angular, NodeJs). Webpack est mon outil de prédilection pour créer un environnement de production minimaliste et optimisé. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible."
 }
