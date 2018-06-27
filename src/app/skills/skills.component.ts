@@ -43,8 +43,27 @@ export class SkillsComponent {
     { key: 'MYSQL', value: 60 } as Skill
   ];
 
+  public softSkillsExpanded = false;
+  public hardSkillsExpanded = false;
+
   constructor(private el: ElementRef) {
     this.softSkills = this.softSkills.sort((a: Skill, b: Skill) => a.key.localeCompare(b.key));
     this.hardSkills = this.hardSkills.sort((a: Skill, b: Skill) => a.key.localeCompare(b.key));
+  }
+
+  public getSoftSkills(): Skill[] {
+    return this.softSkillsExpanded ? this.softSkills : this.softSkills.slice(0, 10);
+  }
+
+  public getHardSkills(): Skill[] {
+    return this.hardSkillsExpanded ? this.hardSkills : this.hardSkills.slice(0, 10);
+  }
+
+  public toggleSoftSkillsExpanded(): void {
+    this.softSkillsExpanded = !this.softSkillsExpanded;
+  }
+
+  public toggleHardSkillsExpanded(): void {
+    this.hardSkillsExpanded = !this.hardSkillsExpanded;
   }
 }

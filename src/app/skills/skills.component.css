@@ -19,3 +19,22 @@
         flex-wrap: wrap;
     }
 }
+
+.viewMoreContainer {
+    text-align:center;
+    margin: 10px auto;
+}
+
+.viewMore {
+    font-size: 0.8em;
+    color: black;
+    background-color: lightgray;
+    padding: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.viewMore:hover {
+    background-color: #7b9dbb;
+}

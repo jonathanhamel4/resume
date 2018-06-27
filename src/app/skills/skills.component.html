@@ -5,7 +5,7 @@
     <div class="flex-row">
       <div class="skill-column">
         <h5>{{ 'SKILLS.SOFT' | translate }}</h5>
-        <div *ngFor="let skill of softSkills">
+        <div *ngFor="let skill of getSoftSkills()">
           <p>
             <span>{{ 'SKILLS.' + skill.key.toUpperCase() | translate }}</span>
             <span *ngIf="skill.tooltip" class="tooltip" [ngClass]="skill.tooltipClass ? skill.tooltipClass : 'tooltip-xs'">
@@ -18,10 +18,14 @@
           </div>
 
         </div>
+        <div class="viewMoreContainer">
+          <span class="viewMore" *ngIf="!softSkillsExpanded" (click)="toggleSoftSkillsExpanded()">{{ 'VIEW_MORE' | translate }}</span>
+          <span class="viewMore" *ngIf="softSkillsExpanded" (click)="toggleSoftSkillsExpanded()">{{ 'VIEW_LESS' | translate }}</span>
+        </div>
       </div>
       <div class="skill-column">
         <h5>{{ 'SKILLS.HARD' | translate }}</h5>
-        <div *ngFor="let skill of hardSkills">
+        <div *ngFor="let skill of getHardSkills()">
           <p>
             <span>{{skill.key}}</span>
             <span *ngIf="skill.tooltip" class="tooltip" [ngClass]="skill.tooltipClass ? skill.tooltipClass : 'tooltip-xs'">
@@ -32,6 +36,10 @@
           <div class="progress">
             <progress max="100" value="{{skill.value}}"></progress>
           </div>
+        </div>
+        <div class="viewMoreContainer">
+          <span class="viewMore" *ngIf="!hardSkillsExpanded" (click)="toggleHardSkillsExpanded()">{{ 'VIEW_MORE' | translate }}</span>
+          <span class="viewMore" *ngIf="hardSkillsExpanded" (click)="toggleHardSkillsExpanded()">{{ 'VIEW_LESS' | translate }}</span>
         </div>
       </div>
     </div>
