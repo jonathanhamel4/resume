@@ -54,3 +54,7 @@
 .flex-header-with-title i:hover {
     color: #7b9dbb;
 }
+
+.wrap-new-line {
+    white-space: pre-line;
+}
