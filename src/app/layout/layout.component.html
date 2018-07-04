@@ -12,6 +12,16 @@
   </clr-header>
   <div class="content-container">
     <div style="overflow-y: auto">
+      <div id="header-container">
+          <div id="header-typewriter-container">
+            <h1 class="typewriter"></h1>
+          </div>
+          <i class="go-down fa fa-angle-down" (click)="scrollToAbout()"></i>
+          <video id="videoHomepage" autoplay loop preload class="fillWidth">
+              <source src="assets/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="assets/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          </video>
+      </div>
       <div class="content-area">
         <ng-content select="[main-content]"></ng-content>
       </div>
