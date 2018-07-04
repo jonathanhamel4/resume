@@ -1,4 +1,10 @@
 {
+    "TYPEWRITER": [
+        "Salut! Moi c'est Jonathan",
+        "Je suis un développeur web", 
+        "Je suis ingénieur",
+        "Je suis ingénieur Logiciel",
+        "Voici mon Curriculum Vitae"],
     "SECTIONS": {
         "ABOUT": "À Propos",
         "EDUCATION": "Éducation",
