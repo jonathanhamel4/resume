@@ -38,6 +38,11 @@ export class LayoutComponent implements OnInit, AfterViewInit {
       cursorChar: "|",
       autoInsertCss: true
     });
+
+    const video = document.getElementById("videoHomepage") as HTMLVideoElement;
+    video.addEventListener("click", () => {
+      video.play();
+    }, false);
   }
 
   public setCurrentLang() {
