@@ -1,4 +1,10 @@
 {
+    "TYPEWRITER": [
+    "Hi, my name is Jonathan",
+    "I'm a Web Developer", 
+    "I'm an Engineer",
+    "I'm a Software Engineer",
+    "Here is my interactive resume"],
     "SECTIONS": {
         "ABOUT": "About Me",
         "EDUCATION": "Education",
