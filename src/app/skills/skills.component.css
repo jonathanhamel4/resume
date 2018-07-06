@@ -9,11 +9,6 @@
     margin: 10px;
 }
 
-.progress {
-    margin-top:unset;
-    position:relative;
-}
-
 @media screen and (max-width: 600px) {
     .flex-row {
         flex-wrap: wrap;

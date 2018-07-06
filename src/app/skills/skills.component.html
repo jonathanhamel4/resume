@@ -13,10 +13,7 @@
               <span class="tooltip-content">{{skill.tooltip}}</span>
             </span>
           </p>
-          <div class="progress">
-            <progress max="100" value="{{skill.value}}"></progress>
-          </div>
-
+          <app-animated-progress [item]="skill"></app-animated-progress>
         </div>
         <div class="viewMoreContainer">
           <span class="viewMore" *ngIf="!softSkillsExpanded" (click)="toggleSoftSkillsExpanded()">{{ 'VIEW_MORE' | translate }}</span>
@@ -33,9 +30,7 @@
               <span class="tooltip-content">{{skill.tooltip}}</span>
             </span>
           </p>
-          <div class="progress">
-            <progress max="100" value="{{skill.value}}"></progress>
-          </div>
+          <app-animated-progress [item]="skill"></app-animated-progress>
         </div>
         <div class="viewMoreContainer">
           <span class="viewMore" *ngIf="!hardSkillsExpanded" (click)="toggleHardSkillsExpanded()">{{ 'VIEW_MORE' | translate }}</span>

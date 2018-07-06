@@ -16,6 +16,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { SplashscreenComponent } from './splashscreen/splashscreen.component';
+import { InViewportModule } from 'ng-in-viewport';
+import { AnimatedProgressComponent } from './animated-progress/animated-progress.component';
 
 const httpLoaderPrefix = environment.production ? "/resume/assets/i18n/" : "/assets/i18n/";
 // AoT requires an exported function for factories
@@ -33,13 +35,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     SkillsComponent,
     VolunteeringComponent,
     HoverDirective,
-    SplashscreenComponent
+    SplashscreenComponent,
+    AnimatedProgressComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ClarityModule,
     HttpClientModule,
+    InViewportModule,
     TranslateModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
