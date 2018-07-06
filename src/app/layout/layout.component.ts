@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { Link } from '../../models/link';
 import { LinkService } from '../../services/link.service';
 import { TranslateService } from '@ngx-translate/core';
@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css']
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public links: Link[] = [];
   public currentLang = '';
@@ -18,6 +18,28 @@ export class LayoutComponent implements OnInit {
   public ngOnInit() {
     this.currentLang = this.translate.currentLang;
     this.links = this.linkService.sectionLinks;
+  }
+
+  public ngAfterViewInit() {
+    Array.from(document.querySelectorAll(".header-anchor")).forEach((anchor: HTMLAnchorElement) => {
+      anchor.addEventListener("click", this.navigateTo.bind(this, anchor), true)
+    });
+  }
+
+  public ngOnDestroy() {
+    Array.from(document.querySelectorAll(".header-anchor")).forEach((anchor: HTMLAnchorElement) => {
+      anchor.removeEventListener("click", this.navigateTo.bind(this), true)
+    });
+  }
+
+  private navigateTo(eventTarget: HTMLAnchorElement, event: MouseEvent) {
+    event.preventDefault();
+    document.querySelector(eventTarget.hash).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    history.pushState(null, eventTarget.href, eventTarget.href);
   }
 
   public setCurrentLang() {

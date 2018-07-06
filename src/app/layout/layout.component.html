@@ -1,18 +1,18 @@
 <clr-main-container>
   <clr-header>
     <div class="branding">
-      <a class="nav-link" href="#about">
+      <a class="header-anchor nav-link" href="#home">
         <img id="header-logo" src="assets/header_logo.png" />
       </a>
     </div>
     <div class="header-nav" [clr-nav-level]="1">
-      <a *ngFor="let link of links" href="{{link.href}}" class="nav-link nav-text">{{ ('SECTIONS.' + link.display.toUpperCase()) | translate}}</a>
+      <a *ngFor="let link of links" href="{{link.href}}" class="nav-link nav-text header-anchor">{{ ('SECTIONS.' + link.display.toUpperCase()) | translate}}</a>
       <a (click)="setCurrentLang()" class="nav-link nav-text">{{currentLang === 'fr' ? 'English' : 'Français'}}</a>
     </div>
   </clr-header>
   <div class="content-container">
     <div style="overflow-y: auto">
-      <app-splashscreen></app-splashscreen>
+      <app-splashscreen id="home"></app-splashscreen>
       <div class="content-area">
         <ng-content select="[main-content]"></ng-content>
       </div>
