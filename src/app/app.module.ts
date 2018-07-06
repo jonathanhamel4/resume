@@ -15,6 +15,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
+import { SplashscreenComponent } from './splashscreen/splashscreen.component';
 
 const httpLoaderPrefix = environment.production ? "/resume/assets/i18n/" : "/assets/i18n/";
 // AoT requires an exported function for factories
@@ -31,7 +32,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     EducationComponent,
     SkillsComponent,
     VolunteeringComponent,
-    HoverDirective
+    HoverDirective,
+    SplashscreenComponent
   ],
   imports: [
     BrowserModule,

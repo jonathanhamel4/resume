@@ -8,10 +8,21 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
 
+  private availableLanguages: string[] = ["en", "fr"];
+
   constructor(public translate: TranslateService) {
-    const browserLang: string = translate.getBrowserLang();
-    const defaultLang = ['en', 'fr'].includes(browserLang) ? browserLang : 'en';
-    translate.setDefaultLang(defaultLang);
-    translate.use(defaultLang);
+    const localStorageLanguage: string = localStorage.getItem("ngx-translate-default-lang");
+    if(localStorageLanguage && this.availableLanguages.includes(localStorageLanguage.toLowerCase())) {
+      this.setLanguage(localStorageLanguage);
+    } else {
+      const browserLang: string = translate.getBrowserLang();
+      const defaultLang =this.availableLanguages.includes(browserLang) ? browserLang : 'en';
+      this.setLanguage(defaultLang);
+    }
+  }
+
+  private setLanguage(language: string) {
+    this.translate.setDefaultLang(language);
+    this.translate.use(language);
   }
 }
