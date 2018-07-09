@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, OnDestroy, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Link } from '../../models/link';
 import { LinkService } from '../../services/link.service';
 import { TranslateService } from '@ngx-translate/core';
@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css']
 })
-export class LayoutComponent implements OnInit, AfterViewInit, OnDestroy {
+export class LayoutComponent implements OnInit {
 
   @Output() onLanguageToggle: EventEmitter<void>;
 
@@ -22,26 +22,23 @@ export class LayoutComponent implements OnInit, AfterViewInit, OnDestroy {
     this.links = this.linkService.sectionLinks;
   }
 
-  public ngAfterViewInit() {
-    Array.from(document.querySelectorAll(".header-anchor")).forEach((anchor: HTMLAnchorElement) => {
-      anchor.addEventListener("click", this.navigateTo.bind(this, anchor), true)
-    });
+  public navigateTo(event: MouseEvent) {
+    const anchorElement = this.findAnchor(event.target as HTMLElement) as HTMLAnchorElement;
+    if(anchorElement) {
+      document.querySelector(anchorElement.hash).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+  
+      history.pushState(null, anchorElement.href, anchorElement.href);
+    }
   }
 
-  public ngOnDestroy() {
-    Array.from(document.querySelectorAll(".header-anchor")).forEach((anchor: HTMLAnchorElement) => {
-      anchor.removeEventListener("click", this.navigateTo.bind(this), true)
-    });
-  }
-
-  private navigateTo(eventTarget: HTMLAnchorElement, event: MouseEvent) {
-    event.preventDefault();
-    document.querySelector(eventTarget.hash).scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-
-    history.pushState(null, eventTarget.href, eventTarget.href);
+  public findAnchor(target: HTMLElement) {
+    while(target && target.tagName !== "A") {
+      target = target.parentElement
+    }
+    return target;
   }
 
   public changeLanguage() {

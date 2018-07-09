@@ -1,12 +1,12 @@
 <clr-main-container>
   <clr-header>
     <div class="branding">
-      <a class="header-anchor nav-link" href="#home">
+      <a class="nav-link" (click)="navigateTo($event)" [routerLink]='' fragment="home">
         <img id="header-logo" src="assets/header_logo.png" />
       </a>
     </div>
     <div class="header-nav" [clr-nav-level]="1">
-      <a *ngFor="let link of links" href="{{link.href}}" class="nav-link nav-text header-anchor">{{ ('SECTIONS.' + link.display.toUpperCase()) | translate}}</a>
+      <a *ngFor="let link of links" [routerLink]='' [fragment]="link.href" (click)="navigateTo($event)" class="nav-link nav-text">{{ ('SECTIONS.' + link.display.toUpperCase()) | translate}}</a>
       <a (click)="changeLanguage()" class="nav-link nav-text">{{translate.currentLang === 'fr' ? 'English' : 'Français'}}</a>
     </div>
   </clr-header>

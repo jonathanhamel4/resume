@@ -13,10 +13,10 @@ export class LinkService {
     ];
 
     public sectionLinks: Link[] = [
-        { display: 'About', href: '#about' } as Link,
-        { display: 'Education', href: '#education' } as Link,
-        { display: 'Skills', href: '#skills' } as Link,
-        { display: 'Volunteering', href: '#volunteering' } as Link,
+        { display: 'About', href: 'about' } as Link,
+        { display: 'Education', href: 'education' } as Link,
+        { display: 'Skills', href: 'skills' } as Link,
+        { display: 'Volunteering', href: 'volunteering' } as Link,
     ];
 
     constructor() {
