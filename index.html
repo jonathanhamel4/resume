@@ -11,16 +11,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles.518c46e88abd76f6d573.css"></head>
 <body>
-  <app-root></app-root>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121234093-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-121234093-1');
-  </script>
+  <!-- Fix routing in gh-pages -->
   <script>
     (function(){
       var redirect = sessionStorage.redirect;
@@ -31,5 +22,17 @@
     })();
   </script>
 
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.9f773b75ffcda6bb2a95.js"></script><script type="text/javascript" src="scripts.35cb69230a6c03416bfd.js"></script><script type="text/javascript" src="main.7e4d0e33775c4537ff28.js"></script></body>
+  <!-- Angular Application Root -->
+  <app-root></app-root>
+
+  <!-- Global site tag (gtag.js) - Google Analytics - Load asynchronously to not slow down main loading -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121234093-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121234093-1');
+  </script>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.9f773b75ffcda6bb2a95.js"></script><script type="text/javascript" src="scripts.35cb69230a6c03416bfd.js"></script><script type="text/javascript" src="main.1631c35c63f828e3bc33.js"></script></body>
 </html>
