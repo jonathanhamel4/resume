@@ -18,12 +18,20 @@ import { environment } from '../environments/environment';
 import { SplashscreenComponent } from './splashscreen/splashscreen.component';
 import { InViewportModule } from 'ng-in-viewport';
 import { AnimatedProgressComponent } from './animated-progress/animated-progress.component';
+import { MainComponent } from './main/main.component';
+import { Routes, RouterModule } from '@angular/router';
 
 const httpLoaderPrefix = environment.production ? "/resume/assets/i18n/" : "/assets/i18n/";
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, httpLoaderPrefix);
 }
+
+const routes: Routes = [
+  { path: ':language', component: MainComponent },
+  { path: '', component: MainComponent },
+  { path: '**', redirectTo: '/en', pathMatch: 'full' }
+]
 
 @NgModule({
   declarations: [
@@ -36,9 +44,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     VolunteeringComponent,
     HoverDirective,
     SplashscreenComponent,
-    AnimatedProgressComponent
+    AnimatedProgressComponent,
+    MainComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     BrowserAnimationsModule,
     ClarityModule,

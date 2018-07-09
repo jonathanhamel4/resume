@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy, Output, EventEmitter } from '@angular/core';
 import { Link } from '../../models/link';
 import { LinkService } from '../../services/link.service';
 import { TranslateService } from '@ngx-translate/core';
@@ -10,13 +10,15 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LayoutComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  public links: Link[] = [];
-  public currentLang = '';
+  @Output() onLanguageToggle: EventEmitter<void>;
 
-  constructor(private linkService: LinkService, private translate: TranslateService) { }
+  public links: Link[] = [];
+
+  constructor(private linkService: LinkService, public translate: TranslateService) {
+    this.onLanguageToggle = new EventEmitter<void>();
+  }
 
   public ngOnInit() {
-    this.currentLang = this.translate.currentLang;
     this.links = this.linkService.sectionLinks;
   }
 
@@ -42,14 +44,7 @@ export class LayoutComponent implements OnInit, AfterViewInit, OnDestroy {
     history.pushState(null, eventTarget.href, eventTarget.href);
   }
 
-  public setCurrentLang() {
-    if (this.currentLang === 'en') {
-      this.currentLang = 'fr';
-      this.translate.use('fr');
-    } else {
-      this.currentLang = 'en';
-      this.translate.use('en');
-    }
-    localStorage.setItem("ngx-translate-default-lang", this.currentLang);
+  public changeLanguage() {
+    this.onLanguageToggle.emit();
   }
 }
