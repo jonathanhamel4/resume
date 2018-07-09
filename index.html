@@ -21,6 +21,15 @@
 
     gtag('config', 'UA-121234093-1');
   </script>
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 
 <script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.9f773b75ffcda6bb2a95.js"></script><script type="text/javascript" src="scripts.35cb69230a6c03416bfd.js"></script><script type="text/javascript" src="main.7e4d0e33775c4537ff28.js"></script></body>
 </html>
