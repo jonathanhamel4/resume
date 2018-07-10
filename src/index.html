@@ -12,8 +12,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <!-- Fix routing in gh-pages -->
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+
+  <!-- Angular Application Root -->
   <app-root></app-root>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics - Load asynchronously to not slow down main loading -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121234093-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -22,6 +35,5 @@
 
     gtag('config', 'UA-121234093-1');
   </script>
-
 </body>
 </html>

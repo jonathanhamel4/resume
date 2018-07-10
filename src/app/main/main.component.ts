@@ -29,14 +29,9 @@ export class MainComponent implements OnInit{
         this.currentLanguage = language;
         this.setLanguage(language);
       } else {
-        let localStorageLanguage: string = localStorage.getItem("ngx-translate-default-lang");
-        if(localStorageLanguage && this.availableLanguages.includes(localStorageLanguage.toLowerCase())) {
-          this.router.navigate(['/' + localStorageLanguage.toLowerCase()]);
-        } else {
-          const browserLang: string = this.translate.getBrowserLang();
-          const defaultLang = this.availableLanguages.includes(browserLang) ? browserLang : 'en';
-          this.router.navigate(['/' + defaultLang ]);
-        }
+        const browserLang: string = this.translate.getBrowserLang();
+        const defaultLang = this.availableLanguages.includes(browserLang) ? browserLang : 'en';
+        this.router.navigate(['/' + defaultLang]);
       }
     });
   }
