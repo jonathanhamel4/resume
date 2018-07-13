@@ -21,20 +21,20 @@ export class SplashscreenComponent implements AfterViewInit {
       this.initiateTypeWriter();
     });
 
-    const video = document.getElementById("videoHomepage") as HTMLVideoElement;
-    video.addEventListener("click", () => {
+    const video = document.getElementById('videoHomepage') as HTMLVideoElement;
+    video.addEventListener('click', () => {
       video.play();
     }, false);
   }
 
   private initiateTypeWriter() {
-    this.translate.get("TYPEWRITER").subscribe((typewriterArray: string[]) => {
+    this.translate.get('TYPEWRITER').subscribe((typewriterArray: string[]) => {
       if (this.typed) {
         this.typed.destroy();
         this.typed = null;
       }
 
-      this.typed = new Typed(".typewriter", {
+      this.typed = new Typed('.typewriter', {
         strings: typewriterArray,
         typeSpeed: 50,
         startDelay: 500,
@@ -42,7 +42,7 @@ export class SplashscreenComponent implements AfterViewInit {
         backSpeed: 20,
         loop: false,
         showCursor: true,
-        cursorChar: "|",
+        cursorChar: '|',
         autoInsertCss: true
       });
     });
@@ -51,7 +51,7 @@ export class SplashscreenComponent implements AfterViewInit {
   public scrollToAbout() {
     document.querySelector('#about').scrollIntoView({
       behavior: 'smooth',
-      block: "start"
+      block: 'start'
     });
   }
 

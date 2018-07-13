@@ -1,17 +1,17 @@
-import { Directive, Input, HostListener, Renderer, ElementRef } from '@angular/core';
+import { Directive, Input, HostListener, Renderer2, ElementRef } from '@angular/core';
 
 // tslint:disable-next-line directive-selector
 @Directive({ selector: '[app-hover]' })
 export class HoverDirective {
     @Input() hoverClass: string;
 
-    constructor(public elementRef: ElementRef, private renderer: Renderer) { }
+    constructor(public elementRef: ElementRef, private renderer: Renderer2) { }
 
     @HostListener('mouseover') mouseover() {
-        this.renderer.setElementClass(this.elementRef.nativeElement, this.hoverClass, true);
+        this.renderer.addClass(this.elementRef.nativeElement, this.hoverClass);
     }
 
     @HostListener('mouseout') mouseout() {
-        this.renderer.setElementClass(this.elementRef.nativeElement, this.hoverClass, false);
+        this.renderer.removeClass(this.elementRef.nativeElement, this.hoverClass);
     }
 }

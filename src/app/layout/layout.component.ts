@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LayoutComponent implements OnInit {
 
-  @Output() onLanguageToggle: EventEmitter<void>;
+  @Output() onLanguageToggle: EventEmitter<void>; // tslint:disable-line:no-output-on-prefix
 
   public links: Link[] = [];
 
@@ -24,19 +24,19 @@ export class LayoutComponent implements OnInit {
 
   public navigateTo(event: MouseEvent) {
     const anchorElement = this.findAnchor(event.target as HTMLElement) as HTMLAnchorElement;
-    if(anchorElement) {
+    if (anchorElement) {
       document.querySelector(anchorElement.hash).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+        behavior: 'smooth',
+        block: 'start'
       });
-  
+
       history.pushState(null, anchorElement.href, anchorElement.href);
     }
   }
 
   public findAnchor(target: HTMLElement) {
-    while(target && target.tagName !== "A") {
-      target = target.parentElement
+    while (target && target.tagName !== 'A') {
+      target = target.parentElement;
     }
     return target;
   }

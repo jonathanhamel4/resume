@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-main',
   template: `
-    <app-layout *ngIf="translate.currentLang" (onLanguageToggle)="onLanguageToggle()">
+    <app-layout *ngIf='translate.currentLang' (onLanguageToggle)='onLanguageToggle()'>
       <div main-content>
         <app-persona></app-persona>
         <app-education></app-education>
@@ -16,17 +16,17 @@ import { TranslateService } from '@ngx-translate/core';
       <app-footer footer></app-footer>
     </app-layout>`
 })
-export class MainComponent implements OnInit{
+export class MainComponent implements OnInit {
 
-  private availableLanguages: string[] = ["en", "fr"];
+  private availableLanguages: string[] = ['en', 'fr'];
   private currentLanguage: string = null;
 
   constructor(private route: ActivatedRoute, private router: Router, public translate: TranslateService) { }
 
   public ngOnInit() {
     this.route.params.subscribe((param: Params) => {
-      const language = param["language"] ? param["language"] : null;
-      if(this.availableLanguages.includes(language)) {
+      const language = param['language'] ? param['language'] : null;
+      if (this.availableLanguages.includes(language)) {
         this.currentLanguage = language;
         this.setLanguage(language);
       } else {
@@ -43,7 +43,7 @@ export class MainComponent implements OnInit{
   }
 
   public onLanguageToggle() {
-    const navigateToLang = this.translate.currentLang === "fr" ? "en" : "fr";
+    const navigateToLang = this.translate.currentLang === 'fr' ? 'en' : 'fr';
     this.router.navigate(['/' + navigateToLang]);
   }
 

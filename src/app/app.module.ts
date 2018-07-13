@@ -22,7 +22,7 @@ import { MainComponent } from './main/main.component';
 import { Routes, RouterModule } from '@angular/router';
 import { WorkComponent } from './work/work.component';
 
-const httpLoaderPrefix = environment.production ? "/resume/assets/i18n/" : "/assets/i18n/";
+const httpLoaderPrefix = environment.production ? '/resume/assets/i18n/' : '/assets/i18n/';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, httpLoaderPrefix);
@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: ':language', component: MainComponent },
   { path: '', component: MainComponent },
   { path: '**', redirectTo: '/en', pathMatch: 'full' }
-]
+];
 
 @NgModule({
   declarations: [
