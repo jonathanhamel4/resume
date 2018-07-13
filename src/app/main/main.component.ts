@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
       <div main-content>
         <app-persona></app-persona>
         <app-education></app-education>
+        <app-work></app-work>
         <app-skills></app-skills>
         <app-volunteering></app-volunteering>
       </div>

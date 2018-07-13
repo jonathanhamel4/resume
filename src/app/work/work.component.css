@@ -1,0 +1,29 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-company {
+    flex-shrink: 0;
+    flex-basis: 250px;
+}
+
+.remove-spacing {
+    margin-top: 0;
+}
+
+.reduce-font {
+    font-size: 0.5rem;
+}
+
+@media screen and (max-width:700px) {
+    .flex-row {
+        flex-wrap: wrap;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 10px;
+    }
+
+    .work-company {
+        flex-basis: unset;
+    }
+}

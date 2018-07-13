@@ -20,6 +20,7 @@ import { InViewportModule } from 'ng-in-viewport';
 import { AnimatedProgressComponent } from './animated-progress/animated-progress.component';
 import { MainComponent } from './main/main.component';
 import { Routes, RouterModule } from '@angular/router';
+import { WorkComponent } from './work/work.component';
 
 const httpLoaderPrefix = environment.production ? "/resume/assets/i18n/" : "/assets/i18n/";
 // AoT requires an exported function for factories
@@ -45,7 +46,8 @@ const routes: Routes = [
     HoverDirective,
     SplashscreenComponent,
     AnimatedProgressComponent,
-    MainComponent
+    MainComponent,
+    WorkComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
