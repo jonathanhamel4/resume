@@ -1,7 +1,7 @@
 {
     "TYPEWRITER": [
         "Salut! Moi c'est Jonathan",
-        "Je suis un développeur web", 
+        "Je suis un développeur web",
         "Je suis ingénieur",
         "Je suis ingénieur Logiciel",
         "Voici mon Curriculum Vitae"],
@@ -9,7 +9,8 @@
         "ABOUT": "À Propos",
         "EDUCATION": "Éducation",
         "SKILLS": "Compétences",
-        "VOLUNTEERING": "Bénévolat"
+        "VOLUNTEERING": "Bénévolat",
+        "WORK": "Expérience"
     },
     "VIEW_MORE": "Voir Plus",
     "VIEW_LESS": "Voir Moins",
@@ -40,6 +41,45 @@
         "WORK UNDER PRESSURE": "Travailler sous pression",
         "ADAPTABILITY": "Adaptation"
     },
+    "WORK": [
+        {
+            "COMPANY": "Vigilant, A DRW Company",
+            "POSITION": "Ingénieur Logiciel",
+            "DATE": "Mai 2016 - Aujourd'hui",
+            "DESCRIPTION": "Après ma graduation, je suis devenu employé à temps plein chez Vigilant, A DRW Company dans laquelle j'ai acquéri beaucoup de connaissances sur les environnements Linux et l'outil d'automation Ansible ainsi que Capistrano. Mon domaine de travail se situe plus dans le développement web. De plus, j'adore faire des recherches afin de toujours rapporter les nouvelles technologies du web auprès de mon équipe."
+        },
+        {
+            "COMPANY": "Vigilant, A DRW Company",
+            "POSITION": "Temps partiel - Développeur Web",
+            "DATE": "Septembre 2016 - Mai 2016",
+            "DESCRIPTION": "Je me suis fait demandé de rester temps partiel jusqu'à ma graduation à la fin de mon stage chez Vigilant. Mon focus principal durant cette période était d'être le mentor de stagiaires dans mon équipe. Les stagiaires travaillaient principalement en développement Web utilisant Angular et React comme framework front-end ainsi que Node.js, ASP.NET Core & MVC comme serveur. Le mentorat m'a permi d'acquérir beaucoup de leadership à travers cette dernière année d'université."
+        },
+        {
+            "COMPANY": "Vigilant, A DRW Company",
+            "POSITION": "Stagiaire - Développeur Web",
+            "DATE": "Mai 2016 - Août 2016",
+            "DESCRIPTION": "Mon troisième stage Coop fut chez Vigilant, A DRW Company. À cette compagnie, j'ai accentué mes connaissances du web en travaillant sur des application à partir de zéro et sur la maintenance d'applications ayant plus de vécu. J'ai eu l'opportunité de perfectionner mes connaissances en Node.js, AngularJs, Angular et SQL. J'ai également travailler à faire des bot Web."
+        },
+        {
+            "COMPANY": "CAE Inc.",
+            "POSITION": "Temps partiel - Assurance Qualité",
+            "DATE": "Septembre 2015 - Mai 2016",
+            "DESCRIPTION": "Avant de retourner à l'université, on m'a demandé de demeurer temps partiel chez CAE Inc. Mes tâches principales durant cette période étaient de maintenir, développer et retravailler un Dashboard de métriques. Ce fut pour moi une belle expérience pour développer mon côté Expérience Utilisateur et de design web."
+        },
+        {
+            "COMPANY": "CAE Inc.",
+            "POSITION": "Stagiaire - Assurance Qualité",
+            "DATE": "May 2015 - August 2015",
+            "DESCRIPTION": "Mon deuxième stage Coop fut chez CAE Inc., un leader mondial en formation pour pilote en aviation civile. J'ai eu l'opportunité de perfectionner le côté testing des software, un côté que je ne pratiquait pas beaucoup auparavant. Puisque cela était mon focus principal, j'ai appris à créer un code réutilisable et bien organisé. J'ai acquéri de l'expérience en 'design pattern' et architecture de logiciel. La diversification des tâches dans notre domaine est primordiale."
+        },
+        {
+            "COMPANY": "Institut de Recherche d'Hydro-Québec (IREQ)",
+            "POSITION": "Stagiaire - Développeur Web",
+            "DATE": "Septembre 2014 - Décembre 2014",
+            "DESCRIPTION": "Mon premier stage Coop était à l'Institut de Recherche d'Hydro-Québec. En tant que stagiaire de première année, j'avais beaucoup à apprendre. J'ai appris énormément sur les API REST et sur la maintenance d'Intranets utilisant Microsoft SharePoint. Ce fut une très belle première expérience professionnelle dans laquelle j'en suis ressorti grandi."
+        }
+    ],
+    "SUMMARY_WORK": "Je dispose de plus de deux ans d'expérience dans le domaine du développement web. J'ai utilisé <b>Microsoft ASP.NET Core, MVC et WebForms</b> pour le développement et le déploiement d'application de production à maintes reprises. J'ai également un expérience considérable utilisant <b>AngularJs, Angular et React</b> afin de bâtir des application intéractive ayant un design adapté pour mobile utilisé dans des environnements de production. Lors de la dernière année, j'ai travaillé étroitement avec l'outil <b>Ansible, un outil d'automation, pour maintenir les environnements linux, ainsi que Capistrano, un outil d'automation en Ruby, pour le déploiement d'applications sur les serveurs</b>. J'ai également de l'expérience dans tous les sphères du développement d'application (Spécification de requis, développement, testing, déploiement and maintenance).",
     "VOLUNTEERING": {
         "DIABLOS": {
             "HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018)",
