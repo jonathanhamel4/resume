@@ -6,8 +6,10 @@
     <div class="persona-description">
       <div class="flex-header-with-title">
         <h3 class="anchor-offset">{{ 'SECTIONS.ABOUT' | translate }}</h3>
-        <a target="__blank" *ngFor="let link of socialLinks" href="{{link.href}}">
-          <i [ngClass]="link.icon"></i>
+        <a class="about-link" target="__blank" *ngFor="let link of socialLinks; let last = last" href="{{link.href}}">
+          <span class="link-display">{{link.display}}</span>
+          <span *ngIf="!last" class="link-separator">|</span>
+          <i [ngClass]="link.icon" class="link-icon"></i>
         </a>
       </div>
       <p class="wrap-new-line">{{ 'ABOUT' | translate }}</p>

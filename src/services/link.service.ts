@@ -7,9 +7,10 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LinkService {
     public socialLinks: Link[] = [
-        { icon: 'fa fa-linkedin-square', display: '', href: 'https://www.linkedin.com/in/jonathan-hamel-701aa680' } as Link,
-        { icon: 'fa fa-stack-overflow', display: '', href: 'https://stackoverflow.com/users/5842628/jonathan-hamel' } as Link,
-        { icon: 'fa fa-envelope', display: '', href: 'mailto:jonathanhamel4@gmail.com?Subject=Hey%20there!'} as Link
+        { icon: 'fa fa-linkedin-square', display: 'LinkedIn', href: 'https://www.linkedin.com/in/jonathan-hamel-701aa680' } as Link,
+        { icon: 'fa fa-stack-overflow', display: 'Stack Overflow', href: 'https://stackoverflow.com/users/5842628/jonathan-hamel' } as Link,
+        { icon: 'fa fa-github', display: 'Github', href: 'https://github.com/jonathanhamel4'} as Link,
+        { icon: 'fa fa-envelope', display: 'Email', href: 'mailto:jonathanhamel4@gmail.com?Subject=Hey%20there!'} as Link
     ];
 
     public sectionLinks: Link[] = [

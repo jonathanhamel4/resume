@@ -3,9 +3,16 @@
     width: 100%;
     color: white;
     text-align: center;
+    padding: 15px;
+}
+
+.footer .footer-row {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+}
+
+.footer .row.center {
+    justify-content: center;
 }
 
 .footer p {
@@ -45,8 +52,36 @@ a {
     font-size: initial;
 }
 
-@media screen and (max-width: 450px) {
+span.link-display {
+    font-size: initial;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.about-link {
+    text-decoration: none;
+}
+
+.about-link:hover span.link-display{
+    font-weight: bold;
+}
+
+.link-icon {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
     .latest-sha {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    .link-icon {
+        display: unset;
+    }
+
+    .link-display, .link-separator {
         display: none;
     }
 }
