@@ -37,7 +37,13 @@ describe('Skills Component', () => {
     });
 
     it('should be created', () => {
-        fixture.detectChanges();
         expect(component).toBeTruthy();
+    });
+
+    it('should translate skills', () => {
+        const elements = fixture.nativeElement.querySelectorAll('h5');
+        expect(elements.length).toBe(2);
+        expect(elements[0].innerHTML).toEqual('Soft Skills');
+        expect(elements[1].innerHTML).toEqual('Hard Skills');
     });
 });
