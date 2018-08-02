@@ -56,7 +56,6 @@ const routes: Routes = [
     ClarityModule,
     HttpClientModule,
     InViewportModule,
-    TranslateModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
