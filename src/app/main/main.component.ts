@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { Analytics } from '../../services/analytics';
 
 @Component({
   selector: 'app-main',
@@ -45,6 +46,7 @@ export class MainComponent implements OnInit {
   public onLanguageToggle() {
     const navigateToLang = this.translate.currentLang === 'fr' ? 'en' : 'fr';
     this.router.navigate(['/' + navigateToLang]);
+    Analytics.sendEvent('event', 'Language', navigateToLang);
   }
 
 }

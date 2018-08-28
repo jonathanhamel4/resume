@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Link } from '../../models/link';
 import { LinkService } from '../../services/link.service';
 import { TranslateService } from '@ngx-translate/core';
+import { Analytics } from '../../services/analytics';
 
 @Component({
   selector: 'app-layout',
@@ -31,6 +32,7 @@ export class LayoutComponent implements OnInit {
       });
 
       history.pushState(null, anchorElement.href, anchorElement.href);
+      Analytics.sendEvent('event', 'Navigate', anchorElement.hash);
     }
   }
 
