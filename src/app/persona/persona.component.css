@@ -40,7 +40,7 @@ span.link-display {
 
 @media screen and (max-width: 838px) {
     .link-icon {
-        display: unset;
+        display: inherit;
     }
 
     .link-display, .link-separator {

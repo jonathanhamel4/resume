@@ -9,7 +9,7 @@
         <a class="about-link" target="__blank" *ngFor="let link of socialLinks; let last = last" href="{{link.href}}">
           <span class="link-display">{{link.display}}</span>
           <span *ngIf="!last" class="link-separator">|</span>
-          <i [ngClass]="link.icon" class="link-icon"></i>
+          <i [ngClass]="[link.icon, link.animationClass ? link.animationClass : '']" class="link-icon"></i>
         </a>
       </div>
       <p class="wrap-new-line">{{ 'ABOUT' | translate }}</p>
