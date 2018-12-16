@@ -1,4 +1,5 @@
 {
+    "TITLE": "Software Engineer | Web Developer",
     "TYPEWRITER": [
     "Hi, my name is Jonathan",
     "I'm a Web Developer",
@@ -60,38 +61,38 @@
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Software Engineer",
             "DATE": "May 2017 - Current",
-            "DESCRIPTION": "Once I finished school, with distinction, I became a full-time employee of Vigilant, A DRW Company in which I gained a lot of knowledge in Linux environment maintenance using Ansible, applications deployments and tasks automation using Capistrano. My primary area of work is still Web Development. I love to research and to keep bringing the latest technologies of the web to the team."
+            "DESCRIPTION": "Web development is my thing. I appreciate taking ideas from end-users and building a customized system that will respond and exceed requirements in a timely and stylish manner. Ansible, React, Python, Angular, Nodejs are my most used languages and tools."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Part Time - Web Developer",
             "DATE": "September 2016 - May 2017",
-            "DESCRIPTION": "I was asked to stay part-time after my internship while completing my last year of school. My primary focus was to mentor interns in our team using Web technologies such as Angular, React, ASP.NET Core, Node.js, etc. Mentoring gave me great leadership skills throughout my last year of school."
+            "DESCRIPTION": "As part-time employee, my main tasks were to mentor new interns in our team in their assigned projects. It was a great experience to enhance my leadership skills."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Internship - Web Developer",
             "DATE": "May 2016 - August 2016",
-            "DESCRIPTION": "My third Coop internship was at Vigilant, A DRW Company. I learned how to develop new production applications from scratch as well as maintaining legacy code. Enhanced my knowledge of Node.js, Angular and SQL. I also built web crawlers."
+            "DESCRIPTION": "I developped responsive and real-time web applications with Angular, React, Node.js and Web Sockets for post trade analysis and gained experience on how to build an application from the ground up. Enhanced my knowledge of Node.js, Angular and SQL and ASP framework."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Part Time - Quality Assurance",
             "DATE": "September 2015 - May 2016",
-            "DESCRIPTION": "Before going to school, I was asked if I wanted to continue as a part-time employee. My focus during this period was to develop, refactor and redesign a metrics dashboard for internal uses. It was a great experience on User Experience design."
+            "DESCRIPTION": "My primary tasks during this period were to test services and provide support on various products and inquiries from end-users. It was a great experience dealing with various users and planning requirements."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Internship - Quality Assurance",
             "DATE": "May 2015 - August 2015",
-            "DESCRIPTION": "My second Coop internship was at CAE Inc., a worldwide leader in civil aviation training. I experienced something I wasn't very used to before, unit testing. As it was my primary focus, I learned on how to create testable and maintainable code. Gained experience on design patterns and software architecture. Diversifying work is an asset in our domain."
+            "DESCRIPTION": "My main tasks consisted of developing an ASP.Net Web Form apps for QA metrics. Developped C# and Javascript skills. Testing was also a great part of my day-to-day doing unit tests for backend services and UI testing with Selenium. Gained a great understanding of how important tests are in a software solution."
         },
         {
             "COMPANY": "Hydro-Quebec Research Institute",
             "POSITION": "Internship - Web Developer",
             "DATE": "September 2014 - December 2014",
-            "DESCRIPTION": "My first Coop internship was at Hydro-Quebec Research Institute. Learned a great deal on RESTFUL APIs and Intranet maintenance using Microsoft SharePoint. It was a very good first professional experience in which I learned a lot."
+            "DESCRIPTION": "I got an introduction to REST and the various API interactions. Internship consisted mostly in SharePoint 2013 development of an Intranet using pure Javascript and jQuery."
         }
     ],
-    "ABOUT": "Highly motivated Software Engineer graduated from Concordia University in 2017. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I am experienced in all the application life cycle from eliciting requirements and planning to testing.\n\nI used intensively Ansible and Capistrano for application deployments and environments maintenance. Also, I have a few years of experience developing applications using the MEAN (Mongo, Express, Angular, NodeJs) stack using Webpack as a package bundler. Test Driven Development is an approach I try to conform to."
+    "ABOUT": "Highly motivated Software Engineer graduated from Concordia University in 2017 and a Javascript enthousiast. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I have experience in all the application life cycle from eliciting requirements and planning to testing.\n\nExperienced web developer using a multitude of tools and frameworks such as Angular, React, Node.js, Python, Docker and Ansible. Webpack is usually my go to, when dealing with code bundling and transpiling. Test Driven Development is an approach I try to conform to.\n\nDon't hesitate to reach out to me!"
 }

@@ -17,3 +17,7 @@ clr-main-container {
         justify-content: flex-end;
     }
 }
+
+.content-container {
+    overflow-x: hidden;
+}

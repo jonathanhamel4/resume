@@ -1,4 +1,5 @@
 {
+    "TITLE": "Ingénieur Logiciel | Développeur Web",
     "TYPEWRITER": [
         "Salut! Moi c'est Jonathan",
         "Je suis un développeur web",
@@ -46,37 +47,37 @@
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Ingénieur Logiciel",
             "DATE": "Mai 2017 - Aujourd'hui",
-            "DESCRIPTION": "Après ma graduation, je suis devenu employé à temps plein chez Vigilant, A DRW Company dans laquelle j'ai acquéri beaucoup de connaissances sur les environnements Linux et l'outil d'automation Ansible ainsi que Capistrano. Mon domaine de travail se situe plus dans le développement web. De plus, j'adore faire des recherches afin de toujours rapporter les nouvelles technologies du web auprès de mon équipe."
+            "DESCRIPTION": "Le développement web, c'est ma tasse de thé. J'adore aller éliciter des requis et en développer une application répondant aux besoins des utilisateurs avec style et précision. Angular, React, Python et Ansible sont mes principaux languages et outils utilisés."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Temps partiel - Développeur Web",
             "DATE": "Septembre 2016 - Mai 2017",
-            "DESCRIPTION": "Je me suis fait demandé de rester temps partiel jusqu'à ma graduation à la fin de mon stage chez Vigilant. Mon focus principal durant cette période était d'être le mentor de stagiaires dans mon équipe. Les stagiaires travaillaient principalement en développement Web utilisant Angular et React comme framework front-end ainsi que Node.js, ASP.NET Core & MVC comme serveur. Le mentorat m'a permi d'acquérir beaucoup de leadership à travers cette dernière année d'université."
+            "DESCRIPTION": "Étant temps partiel, mon premier mandat était d'être mentor de stagiaires dans notre équipe. Leurs projets variaient beaucoup, utilisant diverses technologies. Mon côté adaptatif et autodidacte a grandement bénéficié à l'équipe."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Stagiaire - Développeur Web",
             "DATE": "Mai 2016 - Août 2016",
-            "DESCRIPTION": "Mon troisième stage Coop fut chez Vigilant, A DRW Company. À cette compagnie, j'ai accentué mes connaissances du web en travaillant sur des application à partir de zéro et sur la maintenance d'applications ayant plus de vécu. J'ai eu l'opportunité de perfectionner mes connaissances en Node.js, AngularJs, Angular et SQL. J'ai également travailler à faire des bot Web."
+            "DESCRIPTION": "J'ai développé des applications web adaptative et live en utilisant Angular, React, Node.js, et des Web Sockets pour des outils d'analyses post-trade. J'ai également développé mes compétences pour créer de nouvelles applications du départ. Acquis grandement de compétences de Node.js, Angular, SQL et les frameworks ASP. J'ai également développé plusieurs Web Crawlers durant cette période en utilisant plusieurs approches différences (manipulation DOM et regex)."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Temps partiel - Assurance Qualité",
             "DATE": "Septembre 2015 - Mai 2016",
-            "DESCRIPTION": "Avant de retourner à l'université, on m'a demandé de demeurer temps partiel chez CAE Inc. Mes tâches principales durant cette période étaient de maintenir, développer et retravailler un Dashboard de métriques. Ce fut pour moi une belle expérience pour développer mon côté Expérience Utilisateur et de design web."
+            "DESCRIPTION": "Durant cette période transitoire à temps partiel, j'étais principalement attitré a faire du suivi avec les utilisateurs sur nos produits et d'apporter de nouvelles fonctionalités. Le testing étaient également dans mes tâches au quotidien. Ce fut une belle expérience pour agrémenter mes compétences en gestion et planifications de requis."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Stagiaire - Assurance Qualité",
             "DATE": "May 2015 - August 2015",
-            "DESCRIPTION": "Mon deuxième stage Coop fut chez CAE Inc., un leader mondial en formation pour pilote en aviation civile. J'ai eu l'opportunité de perfectionner le côté testing des software, un côté que je ne pratiquait pas beaucoup auparavant. Puisque cela était mon focus principal, j'ai appris à créer un code réutilisable et bien organisé. J'ai acquéri de l'expérience en 'design pattern' et architecture de logiciel. La diversification des tâches dans notre domaine est primordiale."
+            "DESCRIPTION": "Lors de mon second stage, je développait, modifiait et stylisait un interface web dans l'équipe de QA. J'ai également perfectionné le côté testing, spécifiquement le unit testing et le UI testing avec Selenium. Phase primordiale afin de comprendre comment bien créer du code modulable et maintenable."
         },
         {
             "COMPANY": "Institut de Recherche d'Hydro-Québec",
             "POSITION": "Stagiaire - Développeur Web",
             "DATE": "Septembre 2014 - Décembre 2014",
-            "DESCRIPTION": "Mon premier stage Coop était à l'Institut de Recherche d'Hydro-Québec. En tant que stagiaire de première année, j'avais beaucoup à apprendre. J'ai appris énormément sur les API REST et sur la maintenance d'Intranets utilisant Microsoft SharePoint. Ce fut une très belle première expérience professionnelle dans laquelle j'en suis ressorti grandi."
+            "DESCRIPTION": "Mon premier stage m'a permis de développer des connaissances autour des API, plus spécifiquement REST. J'utilisait principalement Microsoft SharePoint 2013 ainsi que du pure Javascript et jQuery."
         }
     ],
     "VOLUNTEERING": {
@@ -93,5 +94,5 @@
             "DESC":"Fondée en 1892, Mission Bon Accueil est aujourd’hui la plus grande porte d’entrée pour venir en aide aux Montréalais les plus démunis. Une multitude de programmes sont offerts afin d’appuyer les itinérants, les jeunes filles-mères, les familles et les jeunes à risque. Nous redonnons l’espoir par des actions concrètes et des solutions efficaces."
         }
     },
-    "ABOUT": "Ingénieur Logiciel gradué de l’Université Concordia en 2017 ayant une grande motivation. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nUtilisation intensive d’Ansible et de Capistrano lors du déploiement d’applications et de la maintenance d’environments. Également, je dispose de plusieurs années d’expériences en développement utilisant l’approche MEAN (Mongo, Express, Angular, NodeJs). Webpack est mon outil de prédilection pour créer un environnement de production minimaliste et optimisé. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible."
+    "ABOUT": "Ingénieur Logiciel gradué de l’Université Concordia en 2017 et enthousiasmé par Javascript. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nDéveloppeur web accompli ayant de l'expériences avec plusieurs outils et frameworks dont Angular, React, Node.js, Python, Docket ainsi qu'Ansible. Webpack est mon outil de prédilection pour créer un environnement de production minimaliste et optimisé. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible.\n\nN'hésitez pas à me joindre!"
 }
