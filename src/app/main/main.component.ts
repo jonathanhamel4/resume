@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Params, Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Analytics } from '../../services/analytics';
 
@@ -33,9 +33,16 @@ export class MainComponent implements OnInit {
       } else {
         const browserLang: string = this.translate.getBrowserLang();
         const defaultLang = this.availableLanguages.includes(browserLang) ? browserLang : 'en';
-        this.router.navigate(['/' + defaultLang]);
+        this.router.navigate(['/' + defaultLang], {replaceUrl:true});
       }
     });
+
+    this.router.events
+  .subscribe((event) => {
+    if (event instanceof NavigationEnd) {
+      console.log('NavigationEnd:', event);
+    }
+  });
   }
 
   private setLanguage(language: string) {
