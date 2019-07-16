@@ -1,11 +1,5 @@
 {
     "TITLE": "Ingénieur Logiciel | Développeur Web",
-    "TYPEWRITER": [
-        "Salut! Moi c'est Jonathan",
-        "Je suis un développeur web",
-        "Je suis ingénieur",
-        "Je suis ingénieur Logiciel",
-        "Voici mon Curriculum Vitae"],
     "SECTIONS": {
         "ABOUT": "À Propos",
         "EDUCATION": "Éducation",
@@ -43,46 +37,52 @@
         "ADAPTABILITY": "Adaptation"
     },
     "WORK": [
+		{
+			"COMPANY": "Vigilant, A DRW Company",
+			"POSITION": "Chef d'équipe",
+			"DATE": "Mai 2019 - Aujourd'hui",
+			"DESCRIPTION": "Mener et gérer les projets de l'équipe d'insights. Apporter une vision commune, des buts et livrables à l'équipe. Prendre une part active dans les développement des outils de l'équipe."
+		},
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Ingénieur Logiciel",
-            "DATE": "Mai 2017 - Aujourd'hui",
-            "DESCRIPTION": "Le développement web, c'est ma tasse de thé. J'adore aller éliciter des requis et en développer une application répondant aux besoins des utilisateurs avec style et précision. Angular, React, Python et Ansible sont mes principaux languages et outils utilisés."
+            "DATE": "Mai 2017 - Mai 2019",
+            "DESCRIPTION": "Développer des applications créatives, intéractives et adaptatives afin de répondre aux besoins des utilisateurs. Angular, React, Python et Ansible sont mes principaux languages et outils utilisés."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Temps partiel - Développeur Web",
             "DATE": "Septembre 2016 - Mai 2017",
-            "DESCRIPTION": "Étant temps partiel, mon premier mandat était d'être mentor de stagiaires dans notre équipe. Leurs projets variaient beaucoup, utilisant diverses technologies. Mon côté adaptatif et autodidacte a grandement bénéficié à l'équipe."
+            "DESCRIPTION": "Mentorat de stagiaires dans notre équipe sur plusieurs projets. Mon côté adaptatif et autodidacte a grandement bénéficié à l'équipe."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Stagiaire - Développeur Web",
             "DATE": "Mai 2016 - Août 2016",
-            "DESCRIPTION": "J'ai développé des applications web adaptative et live en utilisant Angular, React, Node.js, et des Web Sockets pour des outils d'analyses post-trade. J'ai également développé mes compétences pour créer de nouvelles applications du départ. Acquis grandement de compétences de Node.js, Angular, SQL et les frameworks ASP. J'ai également développé plusieurs Web Crawlers durant cette période en utilisant plusieurs approches différences (manipulation DOM et regex)."
+            "DESCRIPTION": "Développement d'applications web adaptative et en direct en utilisant Angular, React, Node.js, et des Web Sockets pour des outils d'analyses post-trade. J'ai également développé mes compétences pour créer de nouvelles applications en entier. Acquis grandement de compétences de Node.js, Angular, SQL et les frameworks ASP."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Temps partiel - Assurance Qualité",
             "DATE": "Septembre 2015 - Mai 2016",
-            "DESCRIPTION": "Durant cette période transitoire à temps partiel, j'étais principalement attitré a faire du suivi avec les utilisateurs sur nos produits et d'apporter de nouvelles fonctionalités. Le testing étaient également dans mes tâches au quotidien. Ce fut une belle expérience pour agrémenter mes compétences en gestion et planifications de requis."
+            "DESCRIPTION": "Testing et support de plusieurs applications ayant des buts variés. Développement de dashboards utilisant la librairie d3.js. La gestion des requis des utilisateurs m'a permis de développer mon organisation et priorisation des tâches."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Stagiaire - Assurance Qualité",
             "DATE": "May 2015 - August 2015",
-            "DESCRIPTION": "Lors de mon second stage, je développait, modifiait et stylisait un interface web dans l'équipe de QA. J'ai également perfectionné le côté testing, spécifiquement le unit testing et le UI testing avec Selenium. Phase primordiale afin de comprendre comment bien créer du code modulable et maintenable."
+            "DESCRIPTION": "Maintenance et développement de fonctionalités d'un Intranet de métriques développé en ASP.Net Web Forms. J'ai accentué et perfectionné mes connaissances de C# et Javascript. J'ai également perfectionné le côté testing utilisant NUnit et le UI testing avec Selenium."
         },
         {
             "COMPANY": "Institut de Recherche d'Hydro-Québec",
             "POSITION": "Stagiaire - Développeur Web",
             "DATE": "Septembre 2014 - Décembre 2014",
-            "DESCRIPTION": "Mon premier stage m'a permis de développer des connaissances autour des API, plus spécifiquement REST. J'utilisait principalement Microsoft SharePoint 2013 ainsi que du pure Javascript et jQuery."
+            "DESCRIPTION": "Introduction à plusieurs technologies du web tels que les API REST et les contrôles serveurs ASPX. Le stage consistait majoritairement en développement d'un Intranet à l'aide de SharePoint 2013. Les intéractions clients étaient conçus principalement en vanillaJS et jQuery."
         }
     ],
     "VOLUNTEERING": {
         "DIABLOS": {
-            "HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018)",
+            "HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018 - 2019)",
             "DESC": "Entraîneur des Quarts-Arrières au sein de l'équipe Bantam AAA des Diablos de La Prairie. S'assurer que les jeunes se développent une organisation rigide afin de concilier étude et sport de compétition. S'assurer que les jeunes pratiquent le sport de façon sécuritaire afin d'éviter les blessures."
         },
         "HABITAT": {
@@ -90,9 +90,9 @@
             "DESC": "'Notre mission est de mobiliser des bénévoles et des communautés afin de bâtir des demeures abordables et de promouvoir l’achat d’un logement comme moyen de mettre fin au cycle de la pauvreté.'"
         },
         "MISSION": {
-            "HEADER": "Mission Bon Accueil (2017)",
+            "HEADER": "Mission Bon Accueil (2017 & 2019)",
             "DESC":"Fondée en 1892, Mission Bon Accueil est aujourd’hui la plus grande porte d’entrée pour venir en aide aux Montréalais les plus démunis. Une multitude de programmes sont offerts afin d’appuyer les itinérants, les jeunes filles-mères, les familles et les jeunes à risque. Nous redonnons l’espoir par des actions concrètes et des solutions efficaces."
         }
     },
-    "ABOUT": "Ingénieur Logiciel gradué de l’Université Concordia en 2017 et enthousiasmé par Javascript. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nDéveloppeur web accompli ayant de l'expériences avec plusieurs outils et frameworks dont Angular, React, Node.js, Python, Docket ainsi qu'Ansible. Webpack est mon outil de prédilection pour créer un environnement de production minimaliste et optimisé. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible.\n\nN'hésitez pas à me joindre!"
+    "ABOUT": "Ingénieur Logiciel gradué de l’Université Concordia en 2017 et enthousiasmé par Javascript. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nDéveloppeur web accompli ayant de l'expériences avec plusieurs outils et frameworks dont Angular, React, Node.js, Python, Docket ainsi qu'Ansible. J'adore résoudre des problèmes complexes à l'aide de solutions simples, évolutives, réutilisables et adaptées. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible.\n\nN'hésitez pas à me joindre!"
 }
