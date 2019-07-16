@@ -1,11 +1,5 @@
 {
     "TITLE": "Software Engineer | Web Developer",
-    "TYPEWRITER": [
-    "Hi, my name is Jonathan",
-    "I'm a Web Developer",
-    "I'm an Engineer",
-    "I'm a Software Engineer",
-    "Here is my interactive resume"],
     "SECTIONS": {
         "ABOUT": "About Me",
         "EDUCATION": "Education",
@@ -57,42 +51,48 @@
         }
     },
     "WORK": [
+		{
+			"COMPANY": "Vigilant, A DRW Company",
+			"POSITION": "Team Lead",
+			"DATE": "May 2019 - Current",
+			"DESCRIPTION": "Lead and manage the insights team's projects. Provide the team with a vision, goals and milestones. Take an active part in the development process of the team's tools."
+		},
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Software Engineer",
-            "DATE": "May 2017 - Current",
-            "DESCRIPTION": "Web development is my thing. I appreciate taking ideas from end-users and building a customized system that will respond and exceed requirements in a timely and stylish manner. Ansible, React, Python, Angular, Nodejs are my most used languages and tools."
+            "DATE": "May 2017 - May 2019",
+            "DESCRIPTION": "Building creative, interactive and responsive web applications to fulfill end-users needs. Ansible, React, Python, Angular, Nodejs are my most used languages and tools."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Part Time - Web Developer",
             "DATE": "September 2016 - May 2017",
-            "DESCRIPTION": "As part-time employee, my main tasks were to mentor new interns in our team in their assigned projects. It was a great experience to enhance my leadership skills."
+            "DESCRIPTION": "As part-time employee, I mentored new interns in the team in their respective projects. Highly developed my leadership and organizational skills."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Internship - Web Developer",
             "DATE": "May 2016 - August 2016",
-            "DESCRIPTION": "I developped responsive and real-time web applications with Angular, React, Node.js and Web Sockets for post trade analysis and gained experience on how to build an application from the ground up. Enhanced my knowledge of Node.js, Angular and SQL and ASP framework."
+            "DESCRIPTION": "Development of responsive and real-time web applications with Angular, React, Node.js and Web Sockets for post trade analysis. Built all layers of an application from the ground up. Enhanced my knowledge of Node.js, Angular and SQL and ASP framework."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Part Time - Quality Assurance",
             "DATE": "September 2015 - May 2016",
-            "DESCRIPTION": "My primary tasks during this period were to test services and provide support on various products and inquiries from end-users. It was a great experience dealing with various users and planning requirements."
+            "DESCRIPTION": "QA testing and support on various applications of the team. Development of frontend dashboards using d3.js library. Experience with organization and prioritization of end-user requests."
         },
         {
             "COMPANY": "CAE Inc.",
             "POSITION": "Internship - Quality Assurance",
             "DATE": "May 2015 - August 2015",
-            "DESCRIPTION": "My main tasks consisted of developing an ASP.Net Web Form apps for QA metrics. Developped C# and Javascript skills. Testing was also a great part of my day-to-day doing unit tests for backend services and UI testing with Selenium. Gained a great understanding of how important tests are in a software solution."
+            "DESCRIPTION": "Maintain and develop features for an Intranet developed in ASP.Net Web Forms for QA metrics. Developped and enhanced my C# and Javascript skills. TDD was the approach taken in the team. Acquired knowledge of testing with NUnit and Selenium."
         },
         {
             "COMPANY": "Hydro-Quebec Research Institute",
             "POSITION": "Internship - Web Developer",
             "DATE": "September 2014 - December 2014",
-            "DESCRIPTION": "I got an introduction to REST and the various API interactions. Internship consisted mostly in SharePoint 2013 development of an Intranet using pure Javascript and jQuery."
+            "DESCRIPTION": "Introduction to various web technologies such as REST APIs and ASPX Server Side controls. The internship consisted mostly in SharePoint 2013 development of an Intranet. Frontend interactions were vanillaJS and jQuery."
         }
     ],
-    "ABOUT": "Highly motivated Software Engineer graduated from Concordia University in 2017 and a Javascript enthousiast. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I have experience in all the application life cycle from eliciting requirements and planning to testing.\n\nExperienced web developer using a multitude of tools and frameworks such as Angular, React, Node.js, Python, Docker and Ansible. Webpack is usually my go to, when dealing with code bundling and transpiling. Test Driven Development is an approach I try to conform to.\n\nDon't hesitate to reach out to me!"
+    "ABOUT": "Highly motivated Software Engineer graduated from Concordia University in 2017 and a Javascript enthousiast. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I have experience in all the application life cycle from eliciting requirements and planning to testing.\n\nExperienced web developer using a multitude of tools and frameworks such as Angular, React, Node.js, Python, Docker and Ansible. I love to solve complex problems with easy, reusable and maintainable solutions. Test Driven Development is an approach I try to conform to.\n\nDon't hesitate to reach out to me!"
 }
