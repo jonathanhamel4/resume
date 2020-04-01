@@ -16,31 +16,30 @@ export class SkillsComponent {
     { key: 'Positive Attitude', currentValue: 0, value: 80 } as Skill,
     { key: 'Communication', currentValue: 0, value: 90, tooltip: 'English & French', tooltipClass: 'tooltip-sm' } as Skill,
     { key: 'Time Management', currentValue: 0, value: 70 } as Skill,
-    { key: 'Problem-Solving Skills', currentValue: 0, value: 70 } as Skill,
+    { key: 'Problem-Solving Skills', currentValue: 0, value: 80 } as Skill,
     { key: 'Team Player', currentValue: 0, value: 95 } as Skill,
-    { key: 'Confidence', currentValue: 0, value: 60 } as Skill,
+    { key: 'Confidence', currentValue: 0, value: 80 } as Skill,
     { key: 'Learn from Criticism', currentValue: 0, value: 70 } as Skill,
     { key: 'Work under pressure', currentValue: 0, value: 80 } as Skill,
     { key: 'Adaptability', currentValue: 0, value: 85 } as Skill
   ];
 
   public hardSkills: Skill[] = [
-    { key: 'Java', currentValue: 0, value: 60 } as Skill,
+    { key: 'Java', currentValue: 0, value: 50 } as Skill,
     { key: 'Javascript', currentValue: 0, value: 95 } as Skill,
     { key: '.NET & .NET Core', currentValue: 0, value: 80 } as Skill,
     { key: 'AngularJs', currentValue: 0, value: 70 } as Skill,
-    { key: 'Angular 2+', currentValue: 0, value: 100 } as Skill,
-    { key: 'ReactJs', currentValue: 0, value: 60 } as Skill,
+    { key: 'Angular 2+', currentValue: 0, value: 80 } as Skill,
+    { key: 'ReactJs', currentValue: 0, value: 80 } as Skill,
     { key: 'Nodejs + modules', currentValue: 0, value: 90 } as Skill,
-    { key: 'Python', currentValue: 0, value: 70 } as Skill,
+    { key: 'Python', currentValue: 0, value: 85 } as Skill,
     { key: 'VueJs', currentValue: 0, value: 15 } as Skill,
     { key: 'Ruby', currentValue: 0, value: 10 } as Skill,
     { key: 'Ansible', currentValue: 0, value: 70 } as Skill,
     { key: 'Capistrano', currentValue: 0, value: 70 } as Skill,
     { key: 'Shell & Bash', currentValue: 0, value: 40 } as Skill,
     { key: 'PHP', currentValue: 0, value: 40 } as Skill,
-    { key: 'MSSQL', currentValue: 0, value: 60 } as Skill,
-    { key: 'MYSQL', currentValue: 0, value: 60 } as Skill
+    { key: 'SQL', currentValue: 0, value: 60 } as Skill
   ];
 
   public softSkillsExpanded = false;

@@ -37,12 +37,18 @@
         "ADAPTABILITY": "Adaptation"
     },
     "WORK": [
-		{
-			"COMPANY": "Vigilant, A DRW Company",
-			"POSITION": "Chef d'équipe",
-			"DATE": "Mai 2019 - Aujourd'hui",
-			"DESCRIPTION": "Mener et gérer les projets de l'équipe d'insights. Apporter une vision commune, des buts et livrables à l'équipe. Prendre une part active dans les développement des outils de l'équipe."
-		},
+        {
+          "COMPANY": "Shopify",
+          "POSITION": "Développeur Web",
+          "DATE": "Mars 2020 - Présent",
+          "DESCRIPTION": "Développeur Web dans l'équipe de marchandisage. Améliorons le commerce pour tout le monde!"
+        },
+        {
+          "COMPANY": "Vigilant, A DRW Company",
+          "POSITION": "Chef d'équipe",
+          "DATE": "Mai 2019 - Février 2020",
+          "DESCRIPTION": "Mener et gérer les projets de l'équipe d'insights. Apporter une vision commune, des buts et livrables à l'équipe. Prendre une part active dans les développement des outils de l'équipe."
+        },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Ingénieur Logiciel",
@@ -82,7 +88,7 @@
     ],
     "VOLUNTEERING": {
         "DIABLOS": {
-            "HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018 - 2019)",
+            "HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018 - Présent)",
             "DESC": "Entraîneur des Quarts-Arrières au sein de l'équipe Bantam AAA des Diablos de La Prairie. S'assurer que les jeunes se développent une organisation rigide afin de concilier étude et sport de compétition. S'assurer que les jeunes pratiquent le sport de façon sécuritaire afin d'éviter les blessures."
         },
         "HABITAT": {
