@@ -1,17 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jonathan Hamel - Résumé</title>
+  <base href="/resume/">  <meta name="theme-color" content="#313131">
+  <meta name="msapplication-navbutton-color" content="#313131">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google-site-verification" content="FbE8DlSQra-KE7yS5n9Tk2V5BcoC-M2FKi1fOCIjCJ8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Software Engineer from Montreal. Angular 6 SPA for my resume" />
+  <meta property="og:title" content="Jonathan Hamel - Résumé" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:description" content="Angular 6 SPA to showcase my résumé" />
+  <meta property="og:url" content="https://jonathanhamel4.github.io/resume/" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.1e7006ad060dc30e9044.css"></head>
+<body>
+  <!-- Fix routing in gh-pages -->
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 
-<!-- github pages routing hack. Unable to route application on gh-pages which is returning 404. See:
-  * http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
-  * https://github.com/isaacs/github/issues/408
--->
+  <!-- Angular Application Root -->
+  <app-root></app-root>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Custom 404 redirection page">
-    <script>
-      sessionStorage.redirect = location.href;
-    </script>
-    <meta http-equiv="refresh" content="0;URL='http://jonathanhamel4.github.io/resume'"></meta>
-  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics - Load asynchronously to not slow down main loading -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121234093-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121234093-1');
+  </script>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.4db08c0e96a49f819a15.js"></script><script type="text/javascript" src="scripts.35cb69230a6c03416bfd.js"></script><script type="text/javascript" src="main.2f6b36b0eefa38f8fd97.js"></script></body>
 </html>

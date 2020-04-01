@@ -38,7 +38,7 @@
     },
     "VOLUNTEERING": {
         "DIABLOS": {
-            "HEADER": "Quarterback Football Coach (2015 & 2018)",
+            "HEADER": "Quarterback Football Coach (2015 & 2018 - Today)",
             "DESC": "Quarterback coach in my hometown football team for the Diablos La Prairie Bantam AAA team. My goals are to make sure that the children are able to reconcile competitive sports and school. A football player has to be dedicated, respectful, organized, perseverent, and much more. That is, our role as football coach, is to lead children to achieve these goals on a football field, and in their personal life. Also, it is to provide a secure environment for football players to enjoy their favorite sport without serious injuries."
         },
         "HABITAT": {
@@ -46,17 +46,23 @@
             "DESC": "Founded in 1985, Habitat for Humanity Canada is a national, nonprofit organization working toward a world where everyone has a decent and affordable place to call home."
         },
         "MISSION": {
-            "HEADER": "Welcome Hall Mission (2017)",
+            "HEADER": "Welcome Hall Mission (2017 & 2019)",
             "DESC":"Established in 1892, Welcome Hall Mission has become the largest doorway to help for Montrealers in need. Many programs are available to support the homeless, young single mothers, families and at-risk youth. Providing hope through concrete actions and effective solutions."
         }
     },
     "WORK": [
-		{
-			"COMPANY": "Vigilant, A DRW Company",
-			"POSITION": "Team Lead",
-			"DATE": "May 2019 - Current",
-			"DESCRIPTION": "Lead and manage the insights team's projects. Provide the team with a vision, goals and milestones. Take an active part in the development process of the team's tools."
-		},
+        {
+          "COMPANY": "Shopify",
+          "POSITION": "Web Developer",
+          "DATE": "March 2020 - Present",
+          "DESCRIPTION": "Software developer in the Store Management. Let's make commerce better for everyone!"
+        },
+        {
+          "COMPANY": "Vigilant, A DRW Company",
+          "POSITION": "Team Lead",
+          "DATE": "May 2019 - February 2020",
+          "DESCRIPTION": "Lead and manage the insights team's projects. Provide the team with a vision, goals and milestones. Take an active part in the development process of the team's tools."
+        },
         {
             "COMPANY": "Vigilant, A DRW Company",
             "POSITION": "Software Engineer",
