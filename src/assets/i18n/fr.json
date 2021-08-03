@@ -39,9 +39,15 @@
     "WORK": [
         {
           "COMPANY": "Shopify",
-          "POSITION": "Développeur Web",
-          "DATE": "Mars 2020 - Présent",
-          "DESCRIPTION": "Développeur Web dans l'équipe de marchandisage. Améliorons le commerce pour tout le monde!"
+          "POSITION": "Développeur web senior",
+          "DATE": "Août 2021 - Présent",
+          "DESCRIPTION": "Développeur web senior chez Shopify aidant les commerçants à améliorer leurs relations clients. Améliorons le commerce pour tous!"
+        },
+        {
+          "COMPANY": "Shopify",
+          "POSITION": "Développeur web",
+          "DATE": "Mars 2020 - Août 2021",
+          "DESCRIPTION": "Développeur web chez Shopify aidant les commerçants à améliorer leurs relations clients. Améliorons le commerce pour tous!"
         },
         {
           "COMPANY": "Vigilant, A DRW Company",
@@ -51,19 +57,19 @@
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
-            "POSITION": "Ingénieur Logiciel",
+            "POSITION": "Ingénieur logiciel",
             "DATE": "Mai 2017 - Mai 2019",
             "DESCRIPTION": "Développer des applications créatives, intéractives et adaptatives afin de répondre aux besoins des utilisateurs. Angular, React, Python et Ansible sont mes principaux languages et outils utilisés."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
-            "POSITION": "Temps partiel - Développeur Web",
+            "POSITION": "Temps partiel - Développeur web",
             "DATE": "Septembre 2016 - Mai 2017",
             "DESCRIPTION": "Mentorat de stagiaires dans notre équipe sur plusieurs projets. Mon côté adaptatif et autodidacte a grandement bénéficié à l'équipe."
         },
         {
             "COMPANY": "Vigilant, A DRW Company",
-            "POSITION": "Stagiaire - Développeur Web",
+            "POSITION": "Stagiaire - Développeur web",
             "DATE": "Mai 2016 - Août 2016",
             "DESCRIPTION": "Développement d'applications web adaptative et en direct en utilisant Angular, React, Node.js, et des Web Sockets pour des outils d'analyses post-trade. J'ai également développé mes compétences pour créer de nouvelles applications en entier. Acquis grandement de compétences de Node.js, Angular, SQL et les frameworks ASP."
         },
@@ -75,13 +81,13 @@
         },
         {
             "COMPANY": "CAE Inc.",
-            "POSITION": "Stagiaire - Assurance Qualité",
+            "POSITION": "Stagiaire - Assurance qualité",
             "DATE": "May 2015 - August 2015",
             "DESCRIPTION": "Maintenance et développement de fonctionalités d'un Intranet de métriques développé en ASP.Net Web Forms. J'ai accentué et perfectionné mes connaissances de C# et Javascript. J'ai également perfectionné le côté testing utilisant NUnit et le UI testing avec Selenium."
         },
         {
             "COMPANY": "Institut de Recherche d'Hydro-Québec",
-            "POSITION": "Stagiaire - Développeur Web",
+            "POSITION": "Stagiaire - Développeur web",
             "DATE": "Septembre 2014 - Décembre 2014",
             "DESCRIPTION": "Introduction à plusieurs technologies du web tels que les API REST et les contrôles serveurs ASPX. Le stage consistait majoritairement en développement d'un Intranet à l'aide de SharePoint 2013. Les intéractions clients étaient conçus principalement en vanillaJS et jQuery."
         }
