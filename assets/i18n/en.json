@@ -53,9 +53,15 @@
     "WORK": [
         {
           "COMPANY": "Shopify",
+          "POSITION": "Senior Web Developer",
+          "DATE": "August 2021 - Present",
+          "DESCRIPTION": "Senior software developer at Shopify helping merchants engage with their customers. Let's make commerce better for everyone!"
+        },
+        {
+          "COMPANY": "Shopify",
           "POSITION": "Web Developer",
-          "DATE": "March 2020 - Present",
-          "DESCRIPTION": "Software developer in the Store Management. Let's make commerce better for everyone!"
+          "DATE": "March 2020 - August 2021",
+          "DESCRIPTION": "Software developer at Shopify helping merchants engage with their customers. Let's make commerce better for everyone!"
         },
         {
           "COMPANY": "Vigilant, A DRW Company",
