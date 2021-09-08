@@ -27,6 +27,12 @@
   .work-company {
     flex-basis: unset;
   }
+
+  .flex-row .dot-up,
+  .flex-row .dot-down,
+  .dot {
+    display: none;
+  }
 }
 
 .dot {
@@ -38,7 +44,7 @@
   flex-shrink: 0;
 }
 
-.dot-up:after {
+.dot-up::after {
   height: calc(1.2rem + 5px);
   top: 0;
   left: calc(50% - 5px);
@@ -49,7 +55,7 @@
   width: 10px;
 }
 
-.dot-down:before {
+.dot-down::before {
   top: calc(1.2rem + 5px);
   left: calc(50% - 5px);
   display: block;
