@@ -1,29 +1,61 @@
 .flex-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
 .work-company {
-    flex-shrink: 0;
-    flex-basis: 250px;
+  flex-shrink: 0;
+  flex-basis: 250px;
 }
 
 .remove-spacing {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .reduce-font {
-    font-size: 0.5rem;
+  font-size: 0.5rem;
 }
 
-@media screen and (max-width:700px) {
-    .flex-row {
-        flex-wrap: wrap;
-        border-bottom: 1px solid lightgray;
-        padding-bottom: 10px;
-    }
+@media screen and (max-width: 700px) {
+  .flex-row {
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+  }
 
-    .work-company {
-        flex-basis: unset;
-    }
+  .work-company {
+    flex-basis: unset;
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  margin: 1.2rem 0.5rem;
+  flex-shrink: 0;
+}
+
+.dot-up:after {
+  height: calc(1.2rem + 5px);
+  top: 0;
+  left: calc(50% - 5px);
+  display: block;
+  background: lightgrey;
+  content: "";
+  position: absolute;
+  width: 10px;
+}
+
+.dot-down:before {
+  top: calc(1.2rem + 5px);
+  left: calc(50% - 5px);
+  display: block;
+  background: lightgrey;
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
 }
