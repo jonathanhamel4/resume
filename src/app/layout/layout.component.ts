@@ -11,7 +11,7 @@ import { Analytics } from '../../services/analytics';
 })
 export class LayoutComponent implements OnInit {
 
-  @Output() onLanguageToggle: EventEmitter<void>; // tslint:disable-line:no-output-on-prefix
+  @Output() onLanguageToggle: EventEmitter<void>; // eslint-disable-line @angular-eslint/no-output-on-prefix
 
   public links: Link[] = [];
 

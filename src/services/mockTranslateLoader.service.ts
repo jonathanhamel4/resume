@@ -1,11 +1,10 @@
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/of';
+import { TranslateLoader } from '@ngx-translate/core';
+import { Observable, of } from 'rxjs';
 
-// tslint:disable:max-line-length
+/* eslint-disable max-len */
 export class MockHttpLoader implements TranslateLoader {
     getTranslation(lang: string): Observable<any> {
-        return Observable.of({
+        return of({
             'TYPEWRITER': [
                 'Hi, my name is Jonathan',
                 'I\'m a Web Developer',

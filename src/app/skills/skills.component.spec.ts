@@ -13,7 +13,6 @@ import {
 import { AnimatedProgressComponent } from "../animated-progress/animated-progress.component";
 import { ClarityModule } from "@clr/angular";
 import { MockHttpLoader } from "../../services/mockTranslateLoader.service";
-import "rxjs/add/observable/of";
 
 describe("Skills Component", () => {
   let component: SkillsComponent;
