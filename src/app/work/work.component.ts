@@ -6,12 +6,10 @@ import { TranslateService } from "@ngx-translate/core";
   templateUrl: "./work.component.html",
   styleUrls: ["./work.component.css"],
 })
-export class WorkComponent implements OnInit {
+export class WorkComponent {
   constructor(private translate: TranslateService) {
     translate.setDefaultLang("en");
   }
-
-  ngOnInit() {}
 
   public getWork() {
     const work = this.translate.instant("WORK");
