@@ -1,6 +1,6 @@
 import { Directive, Input, HostListener, Renderer2, ElementRef } from '@angular/core';
 
-// tslint:disable-next-line directive-selector
+// eslint-disable-next-line  @angular-eslint/directive-selector
 @Directive({ selector: '[app-hover]' })
 export class HoverDirective {
     @Input() hoverClass: string;

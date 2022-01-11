@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Link } from '../../models/link';
 import { LinkService } from '../../services/link.service';
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { ApiService } from '../../services/api.service';
 
 @Component({

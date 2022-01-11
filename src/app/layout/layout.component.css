@@ -1,6 +1,6 @@
-:host /deep/.header-hamburger-trigger:focus {
+/* :host /deep/.header-hamburger-trigger:focus {
     outline: unset;
-}
+} */
 
 clr-main-container {
     overflow: hidden;
