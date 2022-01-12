@@ -15,9 +15,9 @@ jobs:
           name: Check install
       - checkout
       - run:
-          command: npm install
+          command: yarn
       - run:
-          command: npm test
+          command: yarn test
 workflows:
     sample:
       jobs:
