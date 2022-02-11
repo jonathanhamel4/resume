@@ -1,5 +1,5 @@
 {
-  "TITLE": "Software Engineer | Web Developer",
+  "TITLE": "Software Developer",
   "SECTIONS": {
     "ABOUT": "About Me",
     "EDUCATION": "Education",
@@ -56,7 +56,7 @@
     },
     {
       "COMPANY": "Vigilant, A DRW Company",
-      "POSITION": "Software Engineer",
+      "POSITION": "Software Developer",
       "DATE": "May 2017 - May 2019",
       "DESCRIPTION": "Building creative, interactive and responsive web applications to fulfill end-users needs. Ansible, React, Python, Angular, Nodejs are my most used languages and tools."
     },
@@ -91,5 +91,5 @@
       "DESCRIPTION": "Introduction to various web technologies such as REST APIs and ASPX Server Side controls. The internship consisted mostly in SharePoint 2013 development of an Intranet. Frontend interactions were vanillaJS and jQuery."
     }
   ],
-  "ABOUT": "Highly motivated Software Engineer graduated from Concordia University in 2017 and a Javascript enthousiast. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I have experience in all the application life cycle from eliciting requirements and planning to testing.\n\nExperienced web developer using a multitude of tools and frameworks such as Angular, React, Node.js, Python, Docker and Ansible. I love to solve complex problems with easy, reusable and maintainable solutions. Test Driven Development is an approach I try to conform to.\n\nDon't hesitate to reach out to me!"
+  "ABOUT": "Highly motivated Software Developer graduated from Concordia University in 2017 and a Javascript enthousiast. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I have experience in all the application life cycle from eliciting requirements and planning to testing.\n\nExperienced web developer using a multitude of tools and frameworks such as Angular, React, Node.js, Python, Docker and Ansible. I love to solve complex problems with easy, reusable and maintainable solutions. Test Driven Development is an approach I try to conform to.\n\nDon't hesitate to reach out to me!"
 }
