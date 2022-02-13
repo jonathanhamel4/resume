@@ -20,7 +20,6 @@ import { Analytics } from '../../services/analytics';
 export class MainComponent implements OnInit {
 
   private availableLanguages: string[] = ['en', 'fr'];
-  private currentLanguage: string = null;
 
   constructor(private route: ActivatedRoute, private router: Router, public translate: TranslateService) { }
 
@@ -28,21 +27,20 @@ export class MainComponent implements OnInit {
     this.route.params.subscribe((param: Params) => {
       const language = param['language'] ? param['language'] : null;
       if (this.availableLanguages.includes(language)) {
-        this.currentLanguage = language;
         this.setLanguage(language);
       } else {
         const browserLang: string = this.translate.getBrowserLang();
         const defaultLang = this.availableLanguages.includes(browserLang) ? browserLang : 'en';
-        this.router.navigate(['/' + defaultLang], {replaceUrl:true});
+        this.router.navigate(['/' + defaultLang], { replaceUrl: true });
       }
     });
 
     this.router.events
-  .subscribe((event) => {
-    if (event instanceof NavigationEnd) {
-      console.log('NavigationEnd:', event);
-    }
-  });
+      .subscribe((event) => {
+        if (event instanceof NavigationEnd) {
+          console.log('NavigationEnd:', event);
+        }
+      });
   }
 
   private setLanguage(language: string) {

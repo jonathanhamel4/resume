@@ -35,6 +35,7 @@
     "font-awesome": "^4.7.0",
     "intersection-observer": "^0.12.0",
     "ng-in-viewport": "^6.1.5",
+    "ngx-translate-testing": "^6.0.1",
     "rxjs": "^7.4.0",
     "rxjs-compat": "^6.6.7",
     "typed.js": "^2.0.12",

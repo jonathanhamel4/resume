@@ -1,3 +1,7 @@
+::ng-deep :root {
+  --dot-offset: 1.5rem;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -40,12 +44,12 @@
   height: 10px;
   border-radius: 50%;
   background-color: lightgrey;
-  margin: 1.2rem 0.5rem;
+  margin: var(--dot-offset) 0.5rem;
   flex-shrink: 0;
 }
 
 .dot-up::after {
-  height: calc(1.2rem + 5px);
+  height: calc(var(--dot-offset) + 5px);
   top: 0;
   left: calc(50% - 5px);
   display: block;
@@ -56,7 +60,7 @@
 }
 
 .dot-down::before {
-  top: calc(1.2rem + 5px);
+  top: calc(var(--dot-offset) + 5px);
   left: calc(50% - 5px);
   display: block;
   background: lightgrey;

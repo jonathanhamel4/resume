@@ -5829,6 +5829,13 @@ ng-in-viewport@^6.1.5:
     intersection-observer ">=0.11.0"
     tslib ">=1.9.0"
 
+ngx-translate-testing@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-translate-testing/-/ngx-translate-testing-6.0.1.tgz#68bb5ba3d863ddf9dec09d23049a6a2c3c1636a2"
+  integrity sha512-LI3jOUxGLjnD4OD9DwmmafJ5OyPQJlUbTl6AJKYMYV2EClwmZ3m+V03/mZIO5VRQBIT9fwgNhHmJW1vw7ITpdg==
+  dependencies:
+    tslib "^2.0.0"
+
 nice-napi@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nice-napi/-/nice-napi-1.0.2.tgz#dc0ab5a1eac20ce548802fc5686eaa6bc654927b"
