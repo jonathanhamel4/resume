@@ -17,9 +17,7 @@ export class WorkComponent {
   }
 
   public getWorkClass(i: number) {
-    const work = this.getWork();
-    const previousSame = work[i - 1] && work[i - 1].COMPANY === work[i].COMPANY;
-    const nextSame = work[i + 1] && work[i + 1].COMPANY === work[i].COMPANY;
+    const { previousSame, nextSame } = this.getJobPosition(i);
 
     if (previousSame && nextSame) {
       return "dot-up dot-down";
@@ -32,5 +30,18 @@ export class WorkComponent {
     if (nextSame) {
       return "dot-down";
     }
+  }
+
+  public shouldShowCompany(i: number) {
+    const { previousSame } = this.getJobPosition(i);
+    return !previousSame;
+  }
+
+  private getJobPosition(i: number) {
+    const work = this.getWork();
+    const previousSame = work[i - 1] && work[i - 1].COMPANY === work[i].COMPANY;
+    const nextSame = work[i + 1] && work[i + 1].COMPANY === work[i].COMPANY;
+
+    return { previousSame, previous: work[i - 1], work, nextSame, next: work[i + 1] };
   }
 }
