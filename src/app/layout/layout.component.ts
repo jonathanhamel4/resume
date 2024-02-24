@@ -21,7 +21,6 @@ export class LayoutComponent implements OnInit {
 
   public ngOnInit() {
     this.links = this.linkService.sectionLinks;
-    console.log(this.links)
   }
 
   public navigateTo(event: MouseEvent) {
