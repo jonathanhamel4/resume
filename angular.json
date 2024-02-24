@@ -23,7 +23,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@cds/core/global.min.css",
               "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@cds/core/styles/theme.dark.min.css",
               "node_modules/@clr/ui/clr-ui.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
@@ -104,8 +106,8 @@
       }
     }
   },
-  "defaultProject": "my-experience",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "defaultCollection": "@angular-eslint/schematics",
+    "analytics": false
   }
 }
