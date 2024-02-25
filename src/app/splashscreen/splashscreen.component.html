@@ -3,12 +3,12 @@
     <h1 class="appear-delay">{{header}}</h1>
     <h1 class="initial-blinking lightgray">|</h1>
     <h3 [ngClass]="['fade-in-late title-label', delayTitle]">{{'TITLE' | translate}}</h3>
-    <!--<h1 class="typewriter"></h1>-->
   </div>
   <div class="arrow-container">
     <i [ngClass]="['go-down fa fa-angle-down fade-in-late', delayArrow]" (click)="scrollToAbout()"></i>
   </div>
-  <video id="videoHomepage" autoplay loop preload muted class="fillWidth" poster="assets/Love-Coding.jpg">
+  <video id="videoHomepage" #videoHomepage autoplay loop preload muted="muted" class="fillWidth"
+    poster="assets/Love-Coding.jpg">
     <source src="assets/Love-Coding.webm" type="video/webm" />
     <source src="assets/Love-Coding.mp4" type="video/mp4" />
     <source src="assets/Love-Coding.ogv" type="video/ogv" />

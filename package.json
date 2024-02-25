@@ -39,7 +39,6 @@
     "ngx-translate-testing": "^6.0.1",
     "rxjs": "^7.4.0",
     "rxjs-compat": "^6.6.7",
-    "typed.js": "^2.0.12",
     "zone.js": "^0.11.4"
   },
   "devDependencies": {
@@ -56,8 +55,8 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "4.28.2",
-    "@typescript-eslint/parser": "4.28.2",
+    "@typescript-eslint/eslint-plugin": "7.0.2",
+    "@typescript-eslint/parser": "7.0.2",
     "eslint": "^8.56.0",
     "jasmine-core": "~3.8.0",
     "jasmine-spec-reporter": "~7.0.0",

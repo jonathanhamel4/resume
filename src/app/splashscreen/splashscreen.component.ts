@@ -1,6 +1,4 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
-import Typed from 'typed.js';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, AfterViewInit, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Utils } from '../../services/Utils';
 
 @Component({
@@ -8,19 +6,25 @@ import { Utils } from '../../services/Utils';
   templateUrl: './splashscreen.component.html',
   styleUrls: ['./splashscreen.component.css']
 })
-export class SplashscreenComponent implements OnInit {
+export class SplashscreenComponent implements OnInit, AfterViewInit {
 
-  private typed: any;
+  @ViewChild('videoHomepage', { static: true }) videoHomepage!: ElementRef<HTMLVideoElement>;
 
   public header: string = "";
   public delayTitle: string = "";
   public delayArrow: string = "";
 
-  constructor(private translate: TranslateService) { }
+  constructor() { }
 
   public ngOnInit() {
     this.appearDelay("Jonathan Hamel", 2000, "header");
     Utils.setValueDelay("ready", ["delayTitle", "delayArrow"], this, 3000);
+  }
+
+  public ngAfterViewInit() {
+    const videoTag = this.videoHomepage.nativeElement;
+    videoTag.muted = true;
+    videoTag.play();
   }
 
   public scrollToAbout() {
@@ -30,12 +34,12 @@ export class SplashscreenComponent implements OnInit {
     });
   }
 
-  private appearDelay(msg: string, delay: number, varReference: string, isFirstLetter=true) {
-    if(isFirstLetter) {
+  private appearDelay(msg: string, delay: number, varReference: string, isFirstLetter = true) {
+    if (isFirstLetter) {
       this[varReference] = "";
     }
 
-    if(msg) {
+    if (msg) {
       const timeout = setTimeout(() => {
         this[varReference] += msg[0];
         this.appearDelay(msg.substring(1), delay, varReference, false);
