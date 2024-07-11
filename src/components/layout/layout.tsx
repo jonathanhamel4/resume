@@ -26,11 +26,9 @@ export function Layout() {
   useEffect(() => {
     const hashSplit = window.location.hash.split(/(#[^#]+)/).filter(Boolean);
     const hash = hashSplit[hashSplit.length - 1];
-    console.log(hash, hashSplit);
     if (hash && !scrolledRef.current) {
       scrolledRef.current = true;
       setTimeout(() => {
-        console.log(document.querySelector(hash));
         document.querySelector(hash)?.scrollIntoView({
           behavior: "smooth",
           block: "start",
