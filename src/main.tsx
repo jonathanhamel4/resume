@@ -2,13 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from "react-router-dom";
+import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
@@ -17,27 +13,12 @@ const router = createBrowserRouter([
   {
     path: "/en",
     element: <App locale="en" />,
-    errorElement: <Navigate replace to="/" />,
+    errorElement: <Navigate replace to="" />,
   },
   {
     path: "/fr",
     element: <App locale="fr" />,
-    errorElement: <Navigate replace to="/" />,
-  },
-  {
-    path: "/resume",
-    element: <App />,
-    errorElement: <Navigate replace to="/resume" />,
-  },
-  {
-    path: "/resume/en",
-    element: <App locale="en" />,
-    errorElement: <Navigate replace to="/resume" />,
-  },
-  {
-    path: "/resume/fr",
-    element: <App locale="fr" />,
-    errorElement: <Navigate replace to="/resume" />,
+    errorElement: <Navigate replace to="" />,
   },
 ]);
 

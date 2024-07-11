@@ -100,10 +100,7 @@ export function SplashScreen() {
         <source src={webm} type="video/webm" />
         <source src={mp4} type="video/mp4" />
         <source src={ogv} type="video/ogv" />
-        <img
-          src="assets/Love-Coding.jpg"
-          title="Your browser does not support the video tag"
-        />
+        <img src={poster} title="Your browser does not support the video tag" />
       </video>
     </div>
   );

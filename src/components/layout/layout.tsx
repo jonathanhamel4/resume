@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 import styles from "./layout.module.css";
-// import classNames from "classnames";
 import { SyntheticEvent, useEffect, useRef, useState } from "react";
 
 import logo from "../../assets/header_logo.png";
@@ -25,8 +24,9 @@ export function Layout() {
   const scrolledRef = useRef(false);
 
   useEffect(() => {
-    const hash = window.location.hash;
-    console.log(hash);
+    const hashSplit = window.location.hash.split(/(#[^#]+)/).filter(Boolean);
+    const hash = hashSplit[hashSplit.length - 1];
+    console.log(hash, hashSplit);
     if (hash && !scrolledRef.current) {
       scrolledRef.current = true;
       setTimeout(() => {

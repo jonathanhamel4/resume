@@ -30,10 +30,10 @@ export function AnimatedProgress({ maxValue }: { maxValue: number }) {
   const intervalRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
-    if (value < maxValue) {
+    if (value < maxValue && isVisible) {
       intervalRef.current = setInterval(() => {
         setValue((val) => val + 1);
-      }, 5);
+      }, 0);
     }
 
     return () => {

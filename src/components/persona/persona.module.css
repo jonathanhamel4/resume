@@ -29,7 +29,7 @@ span.linkDisplay {
   font-weight: bold;
 }
 
-.linkIcon {
+.flexHeaderWithTitle .linkIcon {
   display: none;
 }
 
@@ -41,7 +41,7 @@ span.linkDisplay {
 }
 
 @media screen and (max-width: 838px) {
-  .linkIcon {
+  .flexHeaderWithTitle .linkIcon {
     display: inherit;
   }
 
