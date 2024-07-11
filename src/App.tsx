@@ -3,8 +3,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import { Layout } from "./components/layout/layout";
 
-import en from "./assets/i18n/en2.json";
-import fr from "./assets/i18n/fr2.json";
+import en from "./assets/i18n/en.json";
+import fr from "./assets/i18n/fr.json";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
 
