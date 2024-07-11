@@ -21,4 +21,8 @@ jobs:
 workflows:
   sample:
     jobs:
-      - test
+      - test:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
