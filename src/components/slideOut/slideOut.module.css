@@ -1,0 +1,63 @@
+.slideOut {
+  position: fixed;
+  height: 100vh;
+  width: 360px;
+  background-color: rgb(227, 234, 237);
+  z-index: 5;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.opening {
+  transform: translateX(0);
+}
+
+#headerLogo {
+  width: 40px;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+.header {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+}
+
+.unstyled {
+  background: none;
+  border: none;
+  padding: 2px 7px;
+  margin: unset;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: transform 1s ease-out;
+    transform: translateX(0%); */
+}
+
+/* .opening .unstyled {
+    transform: translateX(200%);
+} */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.links > a {
+  color: black;
+  padding: 20px;
+
+  &:hover {
+    color: black;
+    background-color: rgb(230, 247, 255);
+  }
+}

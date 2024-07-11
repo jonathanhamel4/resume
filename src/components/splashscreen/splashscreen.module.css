@@ -1,0 +1,145 @@
+#videoHomepage {
+  height: calc(100vh - 60px);
+  width: 100%;
+  overflow-y: hidden;
+  object-fit: cover;
+}
+
+#headerContainer {
+  position: relative;
+}
+
+#headerContainer h1 {
+  /* display: inline; */
+  color: white;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0;
+}
+
+#headerTypewriterContainer {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#headerContainer h1.initialBlinking {
+  margin: -10px 5px 0 5px;
+  width: 5px;
+  animation: blinkingText 2s infinite;
+  display: inline-block;
+}
+
+.titleLabel {
+  color: white;
+  font-size: 1.2em;
+  color: white;
+  background-color: #08085d;
+  padding: 5px 10px;
+  margin-top: 0;
+  border-radius: 4px;
+}
+
+.moveInLate {
+  transform: translate(0, 100vh);
+  transition: all 1s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.moveInLate.ready {
+  transform: translate(0, 0);
+}
+
+.fadeInLate {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fadeInLate.ready {
+  opacity: 1;
+}
+
+.lightgray {
+  color: gray;
+}
+
+.writerRow {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  #headerContainer h1 {
+    font-size: 25px;
+  }
+
+  .fadeInLate {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #headerContainer h1 {
+    font-size: 20px;
+  }
+
+  #headerContainer h1.initialBlinking {
+    margin: -5px 5px 0 5px;
+  }
+
+  .fadeInLate {
+    font-size: 15px;
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appearFromBottom {
+  0% {
+    position: absolute;
+  }
+}
+
+.arrowContainer {
+  position: absolute;
+  top: calc(100% - 45px);
+  left: 50%;
+  z-index: 2;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+i.goDown {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 3px 8px;
+}
+
+.goDown:hover {
+  background-color: lightgray;
+  color: black;
+}
