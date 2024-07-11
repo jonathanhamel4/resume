@@ -1,0 +1,95 @@
+{
+  "TITLE": "Software Developer",
+  "SECTIONS": {
+    "ABOUT": "About Me",
+    "EDUCATION": "Education",
+    "WORK": "Experience",
+    "SKILLS": "Skills",
+    "VOLUNTEERING": "Volunteering"
+  },
+  "VIEW_MORE": "View More",
+  "VIEW_LESS": "View Less",
+  "EDUCATION": {
+    "CONCORDIA": {
+      "SCHOOL": "Concordia University (2012-2017)",
+      "DESC": "Co-op Bachelor of Software Engineering. Graduated with distinction. Cumulative GPA 3.78.",
+      "HONOR": "Honors",
+      "HONORS": "<ul class='list compact'><li>Stan Heaps Scholarship - 2017</li><li>Dean's List - 2017</li><li>Dean's List - 2016</li><li>Golden Key Honor Society - 2015</li></ul>"
+    },
+    "CEM": {
+      "SCHOOL": "Collège Édouard-Montpetit (2010-2012)",
+      "DESC": "DEC in Pure & Applied Sciences."
+    }
+  },
+  "VOLUNTEERING": {
+    "DIABLOS": {
+      "HEADER": "Quarterback Football Coach (2015 & 2018 - 2021)",
+      "DESC": "Quarterback coach in my hometown football team for the Diablos La Prairie Bantam AAA team. My goals are to make sure that the children are able to reconcile competitive sports and school. A football player has to be dedicated, respectful, organized, perseverent, and much more. That is, our role as football coach, is to lead children to achieve these goals on a football field, and in their personal life. Also, it is to provide a secure environment for football players to enjoy their favorite sport without serious injuries."
+    },
+    "HABITAT": {
+      "HEADER": "Habitat For Humanity (2017)",
+      "DESC": "Founded in 1985, Habitat for Humanity Canada is a national, nonprofit organization working toward a world where everyone has a decent and affordable place to call home."
+    },
+    "MISSION": {
+      "HEADER": "Welcome Hall Mission (2017 & 2019)",
+      "DESC": "Established in 1892, Welcome Hall Mission has become the largest doorway to help for Montrealers in need. Many programs are available to support the homeless, young single mothers, families and at-risk youth. Providing hope through concrete actions and effective solutions."
+    }
+  },
+  "WORK": [
+    {
+      "COMPANY": "Shopify",
+      "POSITION": "Senior Web Developer",
+      "DATE": "August 2021 - Present",
+      "DESCRIPTION": "Senior software developer at Shopify helping merchants engage with their customers. Let's make commerce better for everyone!"
+    },
+    {
+      "COMPANY": "Shopify",
+      "POSITION": "Web Developer",
+      "DATE": "March 2020 - August 2021",
+      "DESCRIPTION": "Software developer at Shopify helping merchants engage with their customers. Let's make commerce better for everyone!"
+    },
+    {
+      "COMPANY": "Vigilant, A DRW Company",
+      "POSITION": "Team Lead",
+      "DATE": "May 2019 - February 2020",
+      "DESCRIPTION": "Lead and manage the insights team's projects. Provide the team with a vision, goals and milestones. Take an active part in the development process of the team's tools."
+    },
+    {
+      "COMPANY": "Vigilant, A DRW Company",
+      "POSITION": "Software Developer",
+      "DATE": "May 2017 - May 2019",
+      "DESCRIPTION": "Building creative, interactive and responsive web applications to fulfill end-users needs. Ansible, React, Python, Angular, Nodejs are my most used languages and tools."
+    },
+    {
+      "COMPANY": "Vigilant, A DRW Company",
+      "POSITION": "Part Time - Web Developer",
+      "DATE": "September 2016 - May 2017",
+      "DESCRIPTION": "As part-time employee, I mentored new interns in the team in their respective projects. Highly developed my leadership and organizational skills."
+    },
+    {
+      "COMPANY": "Vigilant, A DRW Company",
+      "POSITION": "Internship - Web Developer",
+      "DATE": "May 2016 - August 2016",
+      "DESCRIPTION": "Development of responsive and real-time web applications with Angular, React, Node.js and Web Sockets for post trade analysis. Built all layers of an application from the ground up. Enhanced my knowledge of Node.js, Angular and SQL and ASP framework."
+    },
+    {
+      "COMPANY": "CAE Inc.",
+      "POSITION": "Part Time - Quality Assurance",
+      "DATE": "September 2015 - May 2016",
+      "DESCRIPTION": "QA testing and support on various applications of the team. Development of frontend dashboards using d3.js library. Experience with organization and prioritization of end-user requests."
+    },
+    {
+      "COMPANY": "CAE Inc.",
+      "POSITION": "Internship - Quality Assurance",
+      "DATE": "May 2015 - August 2015",
+      "DESCRIPTION": "Maintain and develop features for an Intranet developed in ASP.Net Web Forms for QA metrics. Developped and enhanced my C# and Javascript skills. TDD was the approach taken in the team. Acquired knowledge of testing with NUnit and Selenium."
+    },
+    {
+      "COMPANY": "Hydro-Quebec Research Institute",
+      "POSITION": "Internship - Web Developer",
+      "DATE": "September 2014 - December 2014",
+      "DESCRIPTION": "Introduction to various web technologies such as REST APIs and ASPX Server Side controls. The internship consisted mostly in SharePoint 2013 development of an Intranet. Frontend interactions were vanillaJS and jQuery."
+    }
+  ],
+  "ABOUT": "Software Developer graduated from Concordia University in 2017 and a Web development enthousiast. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I have experience in all the application life cycle from eliciting requirements and planning to testing.\n\nExperienced web developer using a multitude of tools and frameworks such as Angular, React, Preact Node.js, Python, Ruby, Docker and many others. I love to solve complex problems with easy, reusable and maintainable solutions.\n\nDon't hesitate to reach out to me!"
+}

@@ -1,0 +1,82 @@
+.card {
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 3px 2px 2px lightgrey;
+  --dot-offset: 1.5rem;
+}
+
+.workPosition {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.workCompany {
+  flex-shrink: 0;
+  flex-basis: 250px;
+}
+
+.removeSpacing {
+  /* margin-top: 0; */
+  margin-bottom: 0;
+}
+
+.reduceFont {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .flexRow {
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+  }
+
+  .workCompany {
+    flex-basis: unset;
+  }
+
+  .flexRow .dotUp,
+  .flexRow .dotDown,
+  .dot {
+    display: none;
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  margin: var(--dot-offset) 0.5rem;
+  flex-shrink: 0;
+}
+
+.dotUp::after {
+  height: calc(var(--dot-offset) + 5px);
+  top: 0;
+  left: calc(50% - 5px);
+  display: block;
+  background: lightgrey;
+  content: "";
+  position: absolute;
+  width: 10px;
+}
+
+.dotDown::before {
+  top: calc(var(--dot-offset) + 5px);
+  left: calc(50% - 5px);
+  display: block;
+  background: lightgrey;
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+}

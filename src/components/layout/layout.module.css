@@ -1,0 +1,89 @@
+.header {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+#headerLogo {
+  width: 40px;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.bars {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  margin: unset;
+  display: none;
+  color: white;
+}
+
+.branding {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+
+.mainContent {
+  height: 100vh;
+  margin-top: 60px;
+}
+
+.mainContainer {
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .linkContainer {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+  }
+}
+
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 30px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: white;
+  overflow: hidden;
+  opacity: 0.8;
+}

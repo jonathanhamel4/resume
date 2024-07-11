@@ -1,95 +1,59 @@
 {
   "TITLE": "Développeur Logiciel",
-  "SECTIONS": {
-    "ABOUT": "À Propos",
-    "EDUCATION": "Éducation",
-    "SKILLS": "Compétences",
-    "VOLUNTEERING": "Bénévolat",
-    "WORK": "Expérience"
-  },
+  "SECTIONS.ABOUT": "À Propos",
+  "SECTIONS.EDUCATION": "Éducation",
+  "SECTIONS.SKILLS": "Compétences",
+  "SECTIONS.VOLUNTEERING": "Bénévolat",
+  "SECTIONS.WORK": "Expérience",
   "VIEW_MORE": "Voir Plus",
   "VIEW_LESS": "Voir Moins",
-  "EDUCATION": {
-    "CONCORDIA": {
-      "SCHOOL": "Université Concordia (2012-2017)",
-      "DESC": "Co-op Baccalauréat Génie Logiciel. Gradué avec distinction. Cote Z cumulative de 3.78.",
-      "HONOR": "Honeurs",
-      "HONORS": "<ul class='list compact'><li>Bourse d'étude Stan Heaps - 2017</li><li>Liste du recteur - 2017</li><li>Liste du recteur - 2016</li><li>Société Honorifique Golden Key - 2015</li></ul>"
-    },
-    "CEM": {
-      "SCHOOL": "Collège Édouard-Montpetit (2010-2012)",
-      "DESC": "Diplôme d'Études Collégiales en Sciences Pures et Appliquées."
-    }
-  },
-  "WORK": [
-    {
-      "COMPANY": "Shopify",
-      "POSITION": "Développeur web senior",
-      "DATE": "Août 2021 - Présent",
-      "DESCRIPTION": "Développeur web senior chez Shopify aidant les commerçants à améliorer leurs relations clients. Améliorons le commerce pour tous!"
-    },
-    {
-      "COMPANY": "Shopify",
-      "POSITION": "Développeur web",
-      "DATE": "Mars 2020 - Août 2021",
-      "DESCRIPTION": "Développeur web chez Shopify aidant les commerçants à améliorer leurs relations clients. Améliorons le commerce pour tous!"
-    },
-    {
-      "COMPANY": "Vigilant, A DRW Company",
-      "POSITION": "Chef d'équipe",
-      "DATE": "Mai 2019 - Février 2020",
-      "DESCRIPTION": "Mener et gérer les projets de l'équipe d'insights. Apporter une vision commune, des buts et livrables à l'équipe. Prendre une part active dans les développement des outils de l'équipe."
-    },
-    {
-      "COMPANY": "Vigilant, A DRW Company",
-      "POSITION": "Développeur logiciel",
-      "DATE": "Mai 2017 - Mai 2019",
-      "DESCRIPTION": "Développer des applications créatives, intéractives et adaptatives afin de répondre aux besoins des utilisateurs. Angular, React, Python et Ansible sont mes principaux languages et outils utilisés."
-    },
-    {
-      "COMPANY": "Vigilant, A DRW Company",
-      "POSITION": "Temps partiel - Développeur web",
-      "DATE": "Septembre 2016 - Mai 2017",
-      "DESCRIPTION": "Mentorat de stagiaires dans notre équipe sur plusieurs projets. Mon côté adaptatif et autodidacte a grandement bénéficié à l'équipe."
-    },
-    {
-      "COMPANY": "Vigilant, A DRW Company",
-      "POSITION": "Stagiaire - Développeur web",
-      "DATE": "Mai 2016 - Août 2016",
-      "DESCRIPTION": "Développement d'applications web adaptative et en direct en utilisant Angular, React, Node.js, et des Web Sockets pour des outils d'analyses post-trade. J'ai également développé mes compétences pour créer de nouvelles applications en entier. Acquis grandement de compétences de Node.js, Angular, SQL et les frameworks ASP."
-    },
-    {
-      "COMPANY": "CAE Inc.",
-      "POSITION": "Temps partiel - Assurance Qualité",
-      "DATE": "Septembre 2015 - Mai 2016",
-      "DESCRIPTION": "Testing et support de plusieurs applications ayant des buts variés. Développement de dashboards utilisant la librairie d3.js. La gestion des requis des utilisateurs m'a permis de développer mon organisation et priorisation des tâches."
-    },
-    {
-      "COMPANY": "CAE Inc.",
-      "POSITION": "Stagiaire - Assurance qualité",
-      "DATE": "May 2015 - August 2015",
-      "DESCRIPTION": "Maintenance et développement de fonctionalités d'un Intranet de métriques développé en ASP.Net Web Forms. J'ai accentué et perfectionné mes connaissances de C# et Javascript. J'ai également perfectionné le côté testing utilisant NUnit et le UI testing avec Selenium."
-    },
-    {
-      "COMPANY": "Institut de Recherche d'Hydro-Québec",
-      "POSITION": "Stagiaire - Développeur web",
-      "DATE": "Septembre 2014 - Décembre 2014",
-      "DESCRIPTION": "Introduction à plusieurs technologies du web tels que les API REST et les contrôles serveurs ASPX. Le stage consistait majoritairement en développement d'un Intranet à l'aide de SharePoint 2013. Les intéractions clients étaient conçus principalement en vanillaJS et jQuery."
-    }
-  ],
-  "VOLUNTEERING": {
-    "DIABLOS": {
-      "HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018 - 2021)",
-      "DESC": "Entraîneur des Quarts-Arrières au sein de l'équipe Bantam AAA des Diablos de La Prairie. S'assurer que les jeunes se développent une organisation rigide afin de concilier étude et sport de compétition. S'assurer que les jeunes pratiquent le sport de façon sécuritaire afin d'éviter les blessures."
-    },
-    "HABITAT": {
-      "HEADER": "Habitat Pour l'Humanité (2017)",
-      "DESC": "'Notre mission est de mobiliser des bénévoles et des communautés afin de bâtir des demeures abordables et de promouvoir l’achat d’un logement comme moyen de mettre fin au cycle de la pauvreté.'"
-    },
-    "MISSION": {
-      "HEADER": "Mission Bon Accueil (2017 & 2019)",
-      "DESC": "Fondée en 1892, Mission Bon Accueil est aujourd’hui la plus grande porte d’entrée pour venir en aide aux Montréalais les plus démunis. Une multitude de programmes sont offerts afin d’appuyer les itinérants, les jeunes filles-mères, les familles et les jeunes à risque. Nous redonnons l’espoir par des actions concrètes et des solutions efficaces."
-    }
-  },
-  "ABOUT": "Développeur logiciel gradué de l’Université Concordia en 2017 et enthousiasmé par Javascript. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nDéveloppeur web accompli ayant de l'expériences avec plusieurs outils et frameworks dont Angular, React, Node.js, Python, Docket ainsi qu'Ansible. J'adore résoudre des problèmes complexes à l'aide de solutions simples, évolutives, réutilisables et adaptées. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible.\n\nN'hésitez pas à me joindre!"
+  "EDUCATION.CONCORDIA.SCHOOL": "Université Concordia (2012-2017)",
+  "EDUCATION.CONCORDIA.DESC": "Co-op Baccalauréat Génie Logiciel. Gradué avec distinction. Cote Z cumulative de 3.78.",
+  "EDUCATION.CONCORDIA.HONOR": "Honeurs",
+  "EDUCATION.CONCORDIA.HONORS": "<ul class='list compact'><li>Bourse d'étude Stan Heaps - 2017</li><li>Liste du recteur - 2017</li><li>Liste du recteur - 2016</li><li>Société Honorifique Golden Key - 2015</li></ul>",
+  "EDUCATION.CEM.SCHOOL": "Collège Édouard-Montpetit (2010-2012)",
+  "EDUCATION.CEM.DESC": "Diplôme d'Études Collégiales en Sciences Pures et Appliquées.",
+  "WORK.COMPANY.SHOPIFY.TITLE": "Shopify",
+  "WORK.COMPANY.SHOPIFY.POSITION": "Développeur web senior",
+  "WORK.COMPANY.SHOPIFY.DATE": "Août 2021 - Présent",
+  "WORK.COMPANY.SHOPIFY.DESCRIPTION": "Développeur web senior chez Shopify aidant les commerçants à améliorer leurs relations clients. Améliorons le commerce pour tous!",
+  "WORK.COMPANY.SHOPIFY2.TITLE": "Shopify",
+  "WORK.COMPANY.SHOPIFY2.POSITION": "Développeur web",
+  "WORK.COMPANY.SHOPIFY2.DATE": "Mars 2020 - Août 2021",
+  "WORK.COMPANY.SHOPIFY2.DESCRIPTION": "Développeur web chez Shopify aidant les commerçants à améliorer leurs relations clients. Améliorons le commerce pour tous!",
+  "WORK.COMPANY.VIGILANT.TITLE": "Vigilant, A DRW Company",
+  "WORK.COMPANY.VIGILANT.POSITION": "Chef d'équipe",
+  "WORK.COMPANY.VIGILANT.DATE": "Mai 2019 - Février 2020",
+  "WORK.COMPANY.VIGILANT.DESCRIPTION": "Mener et gérer les projets de l'équipe d'insights. Apporter une vision commune, des buts et livrables à l'équipe. Prendre une part active dans les développement des outils de l'équipe.",
+  "WORK.COMPANY.VIGILANT2.TITLE": "Vigilant, A DRW Company",
+  "WORK.COMPANY.VIGILANT2.POSITION": "Développeur logiciel",
+  "WORK.COMPANY.VIGILANT2.DATE": "Mai 2017 - Mai 2019",
+  "WORK.COMPANY.VIGILANT2.DESCRIPTION": "Développer des applications créatives, intéractives et adaptatives afin de répondre aux besoins des utilisateurs. Angular, React, Python et Ansible sont mes principaux languages et outils utilisés.",
+  "WORK.COMPANY.VIGILANT3.TITLE": "Vigilant, A DRW Company",
+  "WORK.COMPANY.VIGILANT3.POSITION": "Temps partiel - Développeur web",
+  "WORK.COMPANY.VIGILANT3.DATE": "Septembre 2016 - Mai 2017",
+  "WORK.COMPANY.VIGILANT3.DESCRIPTION": "Mentorat de stagiaires dans notre équipe sur plusieurs projets. Mon côté adaptatif et autodidacte a grandement bénéficié à l'équipe.",
+  "WORK.COMPANY.VIGILANT4.TITLE": "Vigilant, A DRW Company",
+  "WORK.COMPANY.VIGILANT4.POSITION": "Stagiaire - Développeur web",
+  "WORK.COMPANY.VIGILANT4.DATE": "Mai 2016 - Août 2016",
+  "WORK.COMPANY.VIGILANT4.DESCRIPTION": "Développement d'applications web adaptative et en direct en utilisant Angular, React, Node.js, et des Web Sockets pour des outils d'analyses post-trade. J'ai également développé mes compétences pour créer de nouvelles applications en entier. Acquis grandement de compétences de Node.js, Angular, SQL et les frameworks ASP.",
+  "WORK.COMPANY.CAE.TITLE": "CAE Inc.",
+  "WORK.COMPANY.CAE.POSITION": "Temps partiel - Assurance Qualité",
+  "WORK.COMPANY.CAE.DATE": "Septembre 2015 - Mai 2016",
+  "WORK.COMPANY.CAE.DESCRIPTION": "Testing et support de plusieurs applications ayant des buts variés. Développement de dashboards utilisant la librairie d3.js. La gestion des requis des utilisateurs m'a permis de développer mon organisation et priorisation des tâches.",
+  "WORK.COMPANY.CAE2.TITLE": "CAE Inc.",
+  "WORK.COMPANY.CAE2.POSITION": "Stagiaire - Assurance qualité",
+  "WORK.COMPANY.CAE2.DATE": "May 2015 - August 2015",
+  "WORK.COMPANY.CAE2.DESCRIPTION": "Maintenance et développement de fonctionalités d'un Intranet de métriques développé en ASP.Net Web Forms. J'ai accentué et perfectionné mes connaissances de C# et Javascript. J'ai également perfectionné le côté testing utilisant NUnit et le UI testing avec Selenium.",
+  "WORK.COMPANY.HYDRO.TITLE": "Institut de Recherche d'Hydro-Québec",
+  "WORK.COMPANY.HYDRO.POSITION": "Stagiaire - Développeur web",
+  "WORK.COMPANY.HYDRO.DATE": "Septembre 2014 - Décembre 2014",
+  "WORK.COMPANY.HYDRO.DESCRIPTION": "Introduction à plusieurs technologies du web tels que les API REST et les contrôles serveurs ASPX. Le stage consistait majoritairement en développement d'un Intranet à l'aide de SharePoint 2013. Les intéractions clients étaient conçus principalement en vanillaJS et jQuery.",
+  "VOLUNTEERING.DIABLOS.HEADER": "Entraîneur des Quarts-Arrières (2015 & 2018 - 2021)",
+  "VOLUNTEERING.DIABLOS.DESC": "Entraîneur des Quarts-Arrières au sein de l'équipe Bantam AAA des Diablos de La Prairie. S'assurer que les jeunes se développent une organisation rigide afin de concilier étude et sport de compétition. S'assurer que les jeunes pratiquent le sport de façon sécuritaire afin d'éviter les blessures.",
+  "VOLUNTEERING.HABITAT.HEADER": "Habitat Pour l'Humanité (2017)",
+  "VOLUNTEERING.HABITAT.DESC": "'Notre mission est de mobiliser des bénévoles et des communautés afin de bâtir des demeures abordables et de promouvoir l’achat d’un logement comme moyen de mettre fin au cycle de la pauvreté.'",
+  "VOLUNTEERING.MISSION.HEADER": "Mission Bon Accueil (2017 & 2019)",
+  "VOLUNTEERING.MISSION.DESC": "Fondée en 1892, Mission Bon Accueil est aujourd’hui la plus grande porte d’entrée pour venir en aide aux Montréalais les plus démunis. Une multitude de programmes sont offerts afin d’appuyer les itinérants, les jeunes filles-mères, les familles et les jeunes à risque. Nous redonnons l’espoir par des actions concrètes et des solutions efficaces.",
+  "ABOUT": "Développeur logiciel gradué de l’Université Concordia en 2017 et enthousiasmé par l’écosystème Web. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application, soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nDéveloppeur web accompli ayant de l'expérience avec plusieurs outils et frameworks dont Angular, React, Preact, Node.js, Python, Docker, Ruby et plusieurs autres. J'adore résoudre des problèmes complexes à l'aide de solutions simples, évolutives, réutilisables et adaptées.\n\nN'hésitez pas à me joindre!"
 }
