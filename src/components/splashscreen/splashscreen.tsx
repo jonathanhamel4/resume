@@ -59,10 +59,14 @@ export function SplashScreen() {
   return (
     <div id={styles.headerContainer}>
       <div id={styles.headerTypewriterContainer}>
-        <h1 className={styles.appearDelay}>{header}</h1>
-        <h1 className={classNames([styles.initialBlinking, styles.lightgray])}>
-          |
-        </h1>
+        <div className={styles.writerRow}>
+          <h1 className={styles.appearDelay}>{header}</h1>
+          <h1
+            className={classNames([styles.initialBlinking, styles.lightgray])}
+          >
+            |
+          </h1>
+        </div>
         <h3
           className={classNames([
             styles.fadeInLate,

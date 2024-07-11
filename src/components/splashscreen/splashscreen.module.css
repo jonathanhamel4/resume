@@ -10,9 +10,11 @@
 }
 
 #headerContainer h1 {
-  display: inline;
+  /* display: inline; */
   color: white;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0;
 }
 
 #headerTypewriterContainer {
@@ -23,8 +25,9 @@
   text-align: center;
 }
 
-.initialBlinking {
-  margin: 0 5px;
+#headerContainer h1.initialBlinking {
+  margin: -10px 5px 0 5px;
+  width: 5px;
   animation: blinkingText 2s infinite;
 }
 
@@ -60,10 +63,13 @@
   color: gray;
 }
 
+.writerRow {
+  display: flex;
+  align-items: center;
+}
+
 @keyframes blinkingText {
   0% {
-    width: 0;
-    overflow: hidden;
     opacity: 0;
   }
 
