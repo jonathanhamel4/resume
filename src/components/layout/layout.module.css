@@ -83,7 +83,7 @@
   right: 0;
   bottom: 0;
   z-index: 3;
-  background-color: white;
+  background-color: lightgrey;
   overflow: hidden;
-  opacity: 0.8;
+  opacity: 0.3;
 }

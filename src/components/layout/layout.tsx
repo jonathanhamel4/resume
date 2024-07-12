@@ -122,6 +122,9 @@ export function Layout() {
           slideOpen && styles.overlay,
           slideOpen && "overlayOpen"
         )}
+        onClick={() => {
+          setSlideOpen(false);
+        }}
       ></div>
       <div className={styles.mainContent}>
         <SplashScreen />
