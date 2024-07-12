@@ -8,6 +8,8 @@ import mp4 from "../../assets/Love-Coding.mp4?url";
 import poster from "../../assets/Love-Coding.jpg";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export function SplashScreen() {
   const { t } = useTranslation();
@@ -78,15 +80,7 @@ export function SplashScreen() {
         </h3>
       </div>
       <div className={styles.arrowContainer}>
-        <i
-          className={classNames([
-            styles.goDown,
-            "fa fa-angle-down",
-            styles.fadeInLate,
-            delayElementsVisible && styles.ready,
-          ])}
-          onClick={scrollToAbout}
-        ></i>
+        <FontAwesomeIcon onClick={scrollToAbout} icon={faAngleDown} className={classNames([styles.goDown, styles.fadeInLate, delayElementsVisible && styles.ready])}></FontAwesomeIcon>
       </div>
       <video
         autoPlay

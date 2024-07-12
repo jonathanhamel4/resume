@@ -1,14 +1,7 @@
-.card {
-  border: 1px solid darkgrey;
-  border-radius: 5px;
-  padding: 15px;
-  box-shadow: 3px 2px 2px lightgrey;
-}
-
-.card p {
+.volunteering p {
   margin-top: 5px;
 }
 
-.card h5 {
+.volunteering h5 {
   margin-bottom: 5px;
 }

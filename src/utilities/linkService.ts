@@ -1,29 +1,32 @@
+import { IconDefinition, faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 export interface Link {
   display: string;
-  icon?: string;
+  icon?: IconDefinition;
   href: string;
-  animationClass?: string;
+  buzz?: boolean;
 }
 
 const socialLinks: Link[] = [
   {
-    icon: "fa fa-linkedin-square",
+    icon: faLinkedin,
     display: "LinkedIn",
     href: "https://www.linkedin.com/in/jonathan-hamel-701aa680",
   },
   {
-    icon: "fa fa-stack-overflow",
+    icon: faStackOverflow,
     display: "Stack Overflow",
     href: "https://stackoverflow.com/users/5842628/jonathan-hamel",
   },
   {
-    icon: "fa fa-github",
+    icon: faGithub,
     display: "Github",
     href: "https://github.com/jonathanhamel4",
   },
   {
-    icon: "fa fa-envelope",
-    animationClass: "buzz-timed",
+    icon: faEnvelope,
+    buzz: true,
     display: "Email",
     href: "mailto:jonathanhamel4@gmail.com?Subject=Hey%20there!",
   },

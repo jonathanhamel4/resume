@@ -3,12 +3,13 @@ import concordia from "../../assets/concordia.png";
 import cem from "../../assets/cem_v_2.jpg";
 
 import styles from "./education.module.css";
+import { SlideInCard } from "../slideInCard/slideInCard";
 
 export function Education() {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.card}>
+    <SlideInCard>
       <div id="education" className="hiddenId"></div>
       <h3>{t("SECTIONS.EDUCATION")}</h3>
       <div className={styles.flexRow}>
@@ -35,6 +36,6 @@ export function Education() {
           <p className={styles.descriptionText}>{t("EDUCATION.CEM.DESC")}</p>
         </div>
       </div>
-    </div>
+      </SlideInCard>
   );
 }

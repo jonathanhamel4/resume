@@ -15,6 +15,8 @@ import { Volunteering } from "../volunteering/volunteering";
 import { Footer } from "../footer/footer";
 import { SplashScreen } from "../splashscreen/splashscreen";
 import classNames from "classnames";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export function Layout() {
   const { i18n, t } = useTranslation();
@@ -77,7 +79,7 @@ export function Layout() {
             type="button"
             onClick={() => setSlideOpen(true)}
           >
-            <i className="fa fa-bars"></i>
+            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
           </button>
           <a className={styles.navLink} onClick={navigateTo} data-ref="about">
             <img id={styles.headerLogo} src={logo} />

@@ -3,6 +3,8 @@ import { useApi } from "../../utilities/apiService";
 import styles from "./footer.module.css";
 import classNames from "classnames";
 import { useLinks } from "../../utilities/linkService";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 
 export function Footer() {
   const api = useApi();
@@ -33,7 +35,7 @@ export function Footer() {
         </p>
         <p className={classNames([styles.iconRow, styles.latestSha])}>
           <a target="__blank" href={latestSha?.link}>
-            <i className="fa fa-github"></i>
+            <FontAwesomeIcon icon={faGithub} className={styles.icon}></FontAwesomeIcon>
             <span className={styles.sha}>{latestSha?.sha}</span>
           </a>
         </p>
@@ -50,7 +52,7 @@ export function Footer() {
                 {index !== links.socialLinks.length - 1 && (
                   <span className={styles.linkSeparator}>|</span>
                 )}
-                <i className={classNames([styles.linkIcon, link.icon])}></i>
+                {link.icon && <FontAwesomeIcon icon={link.icon} className={classNames([styles.linkIcon, styles.icon])}></FontAwesomeIcon>}
               </a>
             );
           })}

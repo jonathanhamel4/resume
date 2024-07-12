@@ -30,15 +30,16 @@
   margin: 0;
 }
 
-.footer .iconRow i {
+.footer .iconRow .icon {
   margin: 5px;
   transition: color 0.3s ease;
   cursor: pointer;
   color: white;
   font-size: 20px;
+  vertical-align: bottom;
 }
 
-.footer .iconRow i:hover {
+.footer .iconRow .icon:hover {
   color: #7b9dbb;
 }
 

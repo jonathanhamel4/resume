@@ -1,27 +1,6 @@
-import { RefObject, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./animated-progress.module.css";
-
-function useOnScreen(ref: RefObject<HTMLElement>) {
-  const [isIntersecting, setIntersecting] = useState(false);
-
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIntersecting(entry.isIntersecting)
-      ),
-    []
-  );
-
-  useEffect(() => {
-    if (ref.current) {
-      observer.observe(ref.current);
-      return () => observer.disconnect();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  return isIntersecting;
-}
+import { useOnScreen } from "../../hooks/use-on-screen";
 
 export function AnimatedProgress({ maxValue }: { maxValue: number }) {
   const progressRef = useRef<HTMLDivElement>(null);

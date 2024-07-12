@@ -1,9 +1,3 @@
-.about {
-  background-color: lightgray;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
 .flexRow {
   display: flex;
   flex-direction: row;
@@ -31,6 +25,13 @@ span.linkDisplay {
 
 .flexHeaderWithTitle .linkIcon {
   display: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.flexHeaderWithTitle .linkIcon:hover {
+  color: #7b9dbb;
 }
 
 .imgPersona img {
@@ -66,23 +67,12 @@ span.linkDisplay {
 .flexHeaderWithTitle {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
 }
 
 .flexHeaderWithTitle a,
 .flexHeaderWithTitle a:hover {
   color: rgb(102, 102, 102);
-}
-
-.flexHeaderWithTitle i {
-  font-size: 1.5em;
-  margin: 0 5px;
-  transition: color 0.3s ease;
-  cursor: pointer;
-}
-
-.flexHeaderWithTitle i:hover {
-  color: #7b9dbb;
 }
 
 .wrapNewLine {

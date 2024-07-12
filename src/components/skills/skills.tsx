@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./skills.module.css";
 import { AnimatedProgress } from "../animated-progress/animated-progress";
 import { useState } from "react";
+import { SlideInCard } from "../slideInCard/slideInCard";
 
 export interface Skill {
   value: number;
@@ -37,7 +38,7 @@ export function Skills() {
   }
 
   return (
-    <div className={styles.card}>
+    <SlideInCard>
       <div id="skills" className="hiddenId"></div>
       <h3>{t("SECTIONS.SKILLS")}</h3>
       <div>
@@ -60,6 +61,6 @@ export function Skills() {
           )}
         </div>
       </div>
-    </div>
+    </SlideInCard>
   );
 }

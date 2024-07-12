@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import styles from "./work.module.css";
 import classNames from "classnames";
+import { SlideInCard } from "../slideInCard/slideInCard";
 
 export function Work() {
   const { t } = useTranslation();
@@ -46,9 +47,9 @@ export function Work() {
   }
 
   return (
-    <div className={styles.card}>
+    <SlideInCard>
       <div id="work" className="hiddenId"></div>
-      <h3 className="anchor-offset">{t("SECTIONS.WORK")}</h3>
+      <h3>{t("SECTIONS.WORK")}</h3>
       {work.map((work, i) => (
         <div key={work.COMPANY + i} className={styles.flexRow}>
           <div style={{ position: "relative" }} className={getWorkClass(i)}>
@@ -71,6 +72,6 @@ export function Work() {
           </div>
         </div>
       ))}
-    </div>
+    </SlideInCard>
   );
 }

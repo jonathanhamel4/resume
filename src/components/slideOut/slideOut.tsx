@@ -3,6 +3,8 @@ import styles from "./slideOut.module.css";
 import logo from "../../assets/header_logo.png";
 import classNames from "classnames";
 import { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 export function SlideOut({
   children,
@@ -22,7 +24,7 @@ export function SlideOut({
       <div className={styles.header}>
         <img id={styles.headerLogo} src={logo} />
         <button className={styles.unstyled} onClick={() => setSlideOpen(false)}>
-          <i className="fa fa-close"></i>
+          <FontAwesomeIcon icon={faClose}></FontAwesomeIcon>
         </button>
       </div>
       <div className={styles.links}>{children}</div>
