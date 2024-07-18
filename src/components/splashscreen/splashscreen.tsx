@@ -80,7 +80,15 @@ export function SplashScreen() {
         </h3>
       </div>
       <div className={styles.arrowContainer}>
-        <FontAwesomeIcon onClick={scrollToAbout} icon={faAngleDown} className={classNames([styles.goDown, styles.fadeInLate, delayElementsVisible && styles.ready])}></FontAwesomeIcon>
+        <FontAwesomeIcon
+          onClick={scrollToAbout}
+          icon={faAngleDown}
+          className={classNames([
+            styles.goDown,
+            styles.fadeInLate,
+            delayElementsVisible && styles.ready,
+          ])}
+        ></FontAwesomeIcon>
       </div>
       <video
         autoPlay
@@ -94,7 +102,11 @@ export function SplashScreen() {
         <source src={webm} type="video/webm" />
         <source src={mp4} type="video/mp4" />
         <source src={ogv} type="video/ogv" />
-        <img src={poster} title="Your browser does not support the video tag" />
+        <img
+          alt="splashscreen"
+          src={poster}
+          title="Your browser does not support the video tag"
+        />
       </video>
     </div>
   );

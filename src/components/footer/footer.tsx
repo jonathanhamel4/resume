@@ -35,7 +35,10 @@ export function Footer() {
         </p>
         <p className={classNames([styles.iconRow, styles.latestSha])}>
           <a target="__blank" href={latestSha?.link}>
-            <FontAwesomeIcon icon={faGithub} className={styles.icon}></FontAwesomeIcon>
+            <FontAwesomeIcon
+              icon={faGithub}
+              className={styles.icon}
+            ></FontAwesomeIcon>
             <span className={styles.sha}>{latestSha?.sha}</span>
           </a>
         </p>
@@ -52,7 +55,12 @@ export function Footer() {
                 {index !== links.socialLinks.length - 1 && (
                   <span className={styles.linkSeparator}>|</span>
                 )}
-                {link.icon && <FontAwesomeIcon icon={link.icon} className={classNames([styles.linkIcon, styles.icon])}></FontAwesomeIcon>}
+                {link.icon && (
+                  <FontAwesomeIcon
+                    icon={link.icon}
+                    className={classNames([styles.linkIcon, styles.icon])}
+                  ></FontAwesomeIcon>
+                )}
               </a>
             );
           })}

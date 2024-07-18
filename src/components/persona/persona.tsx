@@ -10,11 +10,11 @@ export function Persona() {
   const { t } = useTranslation();
   const links = useLinks().socialLinks;
   return (
-    <SlideInCard style={{backgroundColor: 'lightgray', border: 'darkgrey'}}>
+    <SlideInCard style={{ backgroundColor: "lightgray", border: "darkgrey" }}>
       <div id="about" className="hiddenId"></div>
       <div className={styles.flexRow}>
         <div className={styles.imgPersona}>
-          <img src={self} />
+          <img alt="" src={self} />
         </div>
         <div className={styles.personaDescription}>
           <div className={styles.flexHeaderWithTitle}>
@@ -31,7 +31,14 @@ export function Persona() {
                   {index !== links.length - 1 && (
                     <span className={styles.linkSeparator}>|</span>
                   )}
-                  {link.icon && <FontAwesomeIcon size="lg" className={styles.linkIcon} icon={link.icon} pulse={link.buzz} />}
+                  {link.icon && (
+                    <FontAwesomeIcon
+                      size="lg"
+                      className={styles.linkIcon}
+                      icon={link.icon}
+                      pulse={link.buzz}
+                    />
+                  )}
                 </a>
               );
             })}

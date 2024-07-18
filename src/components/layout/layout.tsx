@@ -46,12 +46,12 @@ export function Layout() {
   }
 
   function navigateTo(event: SyntheticEvent) {
-    const anchorElement = findAnchor(
+    const buttonElement = (
       event.target as HTMLElement
-    ) as HTMLAnchorElement;
-    if (anchorElement) {
-      navigate(`#${anchorElement.dataset.ref}`);
-      document.querySelector(`#${anchorElement.dataset.ref}`)?.scrollIntoView({
+    ).closest<HTMLButtonElement>("button[data-ref]");
+    if (buttonElement) {
+      navigate(`#${buttonElement.dataset.ref}`);
+      document.querySelector(`#${buttonElement.dataset.ref}`)?.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
@@ -60,14 +60,6 @@ export function Layout() {
     if (slideOpen) {
       setSlideOpen(false);
     }
-  }
-
-  function findAnchor(target: HTMLElement) {
-    let t: HTMLElement | null = target;
-    while (t && t.tagName !== "A") {
-      t = target.parentElement;
-    }
-    return t;
   }
 
   return (
@@ -81,41 +73,45 @@ export function Layout() {
           >
             <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
           </button>
-          <a className={styles.navLink} onClick={navigateTo} data-ref="about">
-            <img id={styles.headerLogo} src={logo} />
-          </a>
+          <button
+            className={styles.navLink}
+            onClick={navigateTo}
+            data-ref="about"
+          >
+            <img alt="logo" id={styles.headerLogo} src={logo} />
+          </button>
         </div>
         <div className={styles.linkContainer}>
           {links.map((link) => (
-            <a
+            <button
               key={link.display}
               data-ref={link.href}
               onClick={navigateTo}
               className={styles.link}
             >
               {t(`SECTIONS.${link.display.toUpperCase()}`)}
-            </a>
+            </button>
           ))}
-          <a className={styles.link} onClick={onLanguageChange}>
+          <button className={styles.link} onClick={onLanguageChange}>
             {i18n.language === "fr" ? "English" : "Français"}
-          </a>
+          </button>
         </div>
       </header>
       <SlideOut open={slideOpen} setSlideOpen={setSlideOpen}>
         <>
           {links.map((link) => (
-            <a
+            <button
               key={link.display}
               data-ref={link.href}
               onClick={navigateTo}
               className={styles.link}
             >
               {t(`SECTIONS.${link.display.toUpperCase()}`)}
-            </a>
+            </button>
           ))}
-          <a className={styles.link} onClick={onLanguageChange}>
+          <button className={styles.link} onClick={onLanguageChange}>
             {i18n.language === "fr" ? "English" : "Français"}
-          </a>
+          </button>
         </>
       </SlideOut>
       <div

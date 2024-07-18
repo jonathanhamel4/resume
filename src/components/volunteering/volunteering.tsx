@@ -6,7 +6,9 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export function Volunteering() {
   const { t } = useTranslation();
-  const linkIcon = <FontAwesomeIcon icon={faLink} color="black"></FontAwesomeIcon>
+  const linkIcon = (
+    <FontAwesomeIcon icon={faLink} color="black"></FontAwesomeIcon>
+  );
   return (
     <SlideInCard>
       <div className={styles.volunteering}>
@@ -15,9 +17,7 @@ export function Volunteering() {
         <h5>
           {" "}
           {t("VOLUNTEERING.DIABLOS.HEADER")}
-          <a href="http://www.footballdiablos.com/">
-            {linkIcon}
-          </a>
+          <a href="http://www.footballdiablos.com/">{linkIcon}</a>
         </h5>
         <div>
           <p>{t("VOLUNTEERING.DIABLOS.DESC")} </p>
@@ -25,9 +25,7 @@ export function Volunteering() {
         <h5>
           {" "}
           {t("VOLUNTEERING.HABITAT.HEADER")}
-          <a href="https://www.habitat.ca/">
-            {linkIcon}
-          </a>
+          <a href="https://www.habitat.ca/">{linkIcon}</a>
         </h5>
         <div>
           <p>{t("VOLUNTEERING.HABITAT.DESC")} </p>
@@ -35,9 +33,7 @@ export function Volunteering() {
         <h5>
           {" "}
           {t("VOLUNTEERING.MISSION.HEADER")}
-          <a href="https://welcomehallmission.com/">
-            {linkIcon}
-          </a>
+          <a href="https://welcomehallmission.com/">{linkIcon}</a>
         </h5>
         <div>
           <p>{t("VOLUNTEERING.MISSION.DESC")} </p>

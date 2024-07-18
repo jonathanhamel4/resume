@@ -22,7 +22,7 @@ export function SlideOut({
       className={classNames([styles.slideOut, open && styles.opening])}
     >
       <div className={styles.header}>
-        <img id={styles.headerLogo} src={logo} />
+        <img alt="logo" id={styles.headerLogo} src={logo} />
         <button className={styles.unstyled} onClick={() => setSlideOpen(false)}>
           <FontAwesomeIcon icon={faClose}></FontAwesomeIcon>
         </button>
