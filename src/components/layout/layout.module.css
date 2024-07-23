@@ -1,19 +1,6 @@
-.header {
-  background-color: rgb(51, 51, 51);
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 5px;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 3;
-}
-
 #headerLogo {
   width: 40px;
-  border-radius: 7px;
+  border-radius: 30px;
   vertical-align: middle;
 }
 
@@ -32,15 +19,6 @@
   gap: 20px;
 }
 
-.bars {
-  background: none;
-  border: none;
-  padding: 5px 10px;
-  margin: unset;
-  display: none;
-  color: white;
-}
-
 .branding {
   display: flex;
   gap: 10px;
@@ -51,8 +29,7 @@
 }
 
 .mainContent {
-  height: 100vh;
-  margin-top: 60px;
+  height: 100svh;
 }
 
 .mainContainer {
@@ -65,16 +42,6 @@
   padding: unset;
   background: none;
   cursor: pointer;
-}
-
-@media screen and (max-width: 800px) {
-  .linkContainer {
-    display: none;
-  }
-
-  .bars {
-    display: block;
-  }
 }
 
 .mainContentContainer {
@@ -94,4 +61,79 @@
   background-color: lightgrey;
   overflow: hidden;
   opacity: 0.3;
+}
+
+.headerV2 {
+  position: fixed;
+  z-index: 2;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.headerContainer > button {
+  appearance: none;
+  background-color: unset;
+  outline: none;
+  border: none;
+  position: relative;
+  padding: 5px;
+  margin: 5px 15px;
+
+  &:hover {
+    border: none;
+  }
+
+  &:hover:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #5b5b5b;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(5px);
+  }
+}
+
+.headerContainer {
+  padding: 10px;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: inline;
+  color: black;
+  background-color: white;
+  border: 1px solid darkgrey;
+}
+
+.hamburger {
+  display: none;
+  padding: 10px;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  border: 1px solid darkgrey;
+}
+
+.bars {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  margin: unset;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .headerContainer {
+    display: none;
+  }
 }

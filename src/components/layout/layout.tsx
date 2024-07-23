@@ -64,8 +64,8 @@ export function Layout() {
 
   return (
     <div className={classNames([styles.mainContainer])}>
-      <header className={styles.header}>
-        <div className={styles.branding}>
+      <header className={styles.headerV2}>
+        <div className={styles.hamburger}>
           <button
             className={styles.bars}
             type="button"
@@ -81,18 +81,18 @@ export function Layout() {
             <img alt="logo" id={styles.headerLogo} src={logo} />
           </button>
         </div>
-        <div className={styles.linkContainer}>
+
+        <div className={styles.headerContainer}>
           {links.map((link) => (
             <button
               key={link.display}
               data-ref={link.href}
               onClick={navigateTo}
-              className={styles.link}
             >
               {t(`SECTIONS.${link.display.toUpperCase()}`)}
             </button>
           ))}
-          <button className={styles.link} onClick={onLanguageChange}>
+          <button onClick={onLanguageChange}>
             {i18n.language === "fr" ? "English" : "Français"}
           </button>
         </div>
