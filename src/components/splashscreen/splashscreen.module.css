@@ -9,27 +9,12 @@
   position: relative;
 }
 
-#headerContainer h1 {
-  /* display: inline; */
-  color: white;
-  font-weight: normal;
-  font-size: 40px;
-  margin: 0;
-}
-
 #headerTypewriterContainer {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-#headerContainer h1.initialBlinking {
-  margin: -10px 5px 0 5px;
-  width: 5px;
-  animation: blinkingText 2s infinite;
-  display: inline-block;
 }
 
 .titleLabel {
@@ -42,35 +27,50 @@
   border-radius: 4px;
 }
 
-.moveInLate {
-  transform: translate(0, 100vh);
-  transition: all 1s cubic-bezier(0, 1, 0.5, 1);
-}
-
-.moveInLate.ready {
-  transform: translate(0, 0);
+@keyframes late {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fadeInLate {
   opacity: 0;
-  transition: opacity 1s ease;
+  animation: late 1s ease forwards;
+  animation-delay: 4s;
 }
 
-.fadeInLate.ready {
-  opacity: 1;
+.appearDelay {
+  animation:
+    text 1s 2s steps(25, end) forwards,
+    blink-caret 0.8s step-end infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid transparent;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  width: 0;
+  color: white;
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 5px;
+  max-width: fit-content;
 }
 
-.lightgray {
-  color: gray;
-}
+@keyframes text {
+  0% {
+    width: 0;
+  }
 
-.writerRow {
-  display: flex;
-  align-items: center;
+  100% {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  #headerContainer h1 {
+  #headerContainer .appearDelay {
     font-size: 25px;
   }
 
@@ -80,12 +80,8 @@
 }
 
 @media screen and (max-width: 410px) {
-  #headerContainer h1 {
+  #headerContainer .appearDelay {
     font-size: 20px;
-  }
-
-  #headerContainer h1.initialBlinking {
-    margin: -5px 5px 0 5px;
   }
 
   .fadeInLate {
@@ -93,31 +89,13 @@
   }
 }
 
-@keyframes blinkingText {
-  0% {
-    opacity: 0;
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
   }
-
-  25% {
-    opacity: 1;
-  }
-
   50% {
-    opacity: 0;
-  }
-
-  75% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes appearFromBottom {
-  0% {
-    position: absolute;
+    border-right-color: white;
   }
 }
 

@@ -6,18 +6,13 @@ import webm from "../../assets/Love-Coding.webm?url";
 import ogv from "../../assets/Love-Coding.ogv?url";
 import mp4 from "../../assets/Love-Coding.mp4?url";
 import poster from "../../assets/Love-Coding.jpg";
-import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export function SplashScreen() {
   const { t } = useTranslation();
-  const [header, setHeader] = useState("");
-  const writerRef = useRef<boolean>(false);
-  const [delayElementsVisible, setDelayElementsVisible] = useState(false);
   const navigate = useNavigate();
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   function scrollToAbout() {
     navigate("#about");
@@ -27,55 +22,11 @@ export function SplashScreen() {
     });
   }
 
-  const appearDelay = useCallback(
-    (msg: string, delay: number, isFirstLetter = true) => {
-      if (msg) {
-        setTimeout(
-          () => {
-            setHeader((header) => (header += msg[0]));
-            appearDelay(msg.substring(1), delay, false);
-          },
-          isFirstLetter ? delay : 25
-        );
-      }
-    },
-    []
-  );
-
-  useEffect(() => {
-    if (!writerRef.current) {
-      writerRef.current = true;
-      appearDelay("Jonathan Hamel", 2000);
-
-      setTimeout(() => {
-        setDelayElementsVisible(true);
-      }, 3000);
-    }
-
-    if (videoRef.current) {
-      // videoRef.current.muted = true;
-      // videoRef.current.play();
-    }
-  }, [appearDelay]);
-
   return (
     <div id={styles.headerContainer}>
       <div id={styles.headerTypewriterContainer}>
-        <div className={styles.writerRow}>
-          <h1 className={styles.appearDelay}>{header}</h1>
-          <h1
-            className={classNames([styles.initialBlinking, styles.lightgray])}
-          >
-            |
-          </h1>
-        </div>
-        <h3
-          className={classNames([
-            styles.fadeInLate,
-            styles.titleLabel,
-            delayElementsVisible && styles.ready,
-          ])}
-        >
+        <h1 className={styles.appearDelay}>Jonathan Hamel</h1>
+        <h3 className={classNames([styles.fadeInLate, styles.titleLabel])}>
           {t("TITLE")}
         </h3>
       </div>
@@ -83,11 +34,7 @@ export function SplashScreen() {
         <FontAwesomeIcon
           onClick={scrollToAbout}
           icon={faAngleDown}
-          className={classNames([
-            styles.goDown,
-            styles.fadeInLate,
-            delayElementsVisible && styles.ready,
-          ])}
+          className={classNames([styles.goDown, styles.fadeInLate])}
         ></FontAwesomeIcon>
       </div>
       <video
@@ -95,7 +42,6 @@ export function SplashScreen() {
         id={styles.videoHomepage}
         loop
         muted
-        ref={videoRef}
         className={styles.fillWidth}
         poster={poster}
       >
