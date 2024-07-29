@@ -1,48 +1,86 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import styles from "./simonsays.module.css";
+import { SlideInCard } from "../slideInCard/slideInCard";
+import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 
-const NUMBER_OF_TILES = 4;
+const NUMBER_OF_TILES = 6;
 
 export function SimonSays() {
+  const { t } = useTranslation();
   const [started, setStarted] = useState(false);
   const [status, setStatus] = useState<"win" | "loose" | null>(null);
 
+  const rules = t("GAME.RULES", { returnObjects: true }) as string[];
+
+  function restart() {
+    setStatus(null);
+    setStarted(false);
+  }
+
   return (
-    <div className={styles.app}>
-      <h1>Simon Says</h1>
+    <SlideInCard>
+      <h3>{t("GAME.TITLE")}</h3>
       {!started && !status && (
-        <button
-          className={styles.button}
-          type="button"
-          onClick={() => setStarted(true)}
-        >
-          Start
-        </button>
+        <div>
+          <p>{t("GAME.RULE_HEADER")}</p>
+          <ul>
+            {rules.map((value, i) => (
+              <li key={i}>{value}</li>
+            ))}
+          </ul>
+          <button
+            className={styles.button}
+            type="button"
+            onClick={() => setStarted(true)}
+          >
+            {t("GAME.START")}
+          </button>
+        </div>
       )}
-      {started && !status && <SimonSaysBoard setStatus={setStatus} />}
-      {status === "win" && <h1>You won</h1>}
-      {status === "loose" && <h1>You loose</h1>}
-    </div>
+      {started && !status && (
+        <SimonSaysBoard setStatus={setStatus} restart={restart} />
+      )}
+      {status === "win" && (
+        <div>
+          <p>{t("GAME.WON")}</p>
+          <button type="button" onClick={restart}>
+            {t("GAME.PLAY_AGAIN")}
+          </button>
+        </div>
+      )}
+      {status === "loose" && (
+        <div>
+          <p>{t("GAME.LOOSE")}</p>
+          <button type="button" onClick={restart}>
+            {t("GAME.TRY_AGAIN")}
+          </button>
+        </div>
+      )}
+    </SlideInCard>
   );
 }
 
+type Sequence = (number | null)[];
+
 function SimonSaysBoard({
   setStatus,
+  restart,
 }: {
   setStatus: Dispatch<SetStateAction<"win" | "loose" | null>>;
+  restart(): void;
 }) {
-  const [tiles] = useState(
-    new Array(NUMBER_OF_TILES).fill(null).map(() => generateRandomColor())
-  );
-  const [sequence, setSequence] = useState<(number | null)[]>(
+  const [tiles] = useState(getTiles(NUMBER_OF_TILES));
+  const [sequence, setSequence] = useState<Sequence>(
     setTileSequence(1, tiles.length)
   );
   const [activeTile, setActiveTile] = useState<number>();
-  const [turn, setTurn] = useState(0);
+  const [turn, setTurn] = useState<0 | 1>(0);
   const sequenceStarted = useRef(false);
-  const userInputRef = useRef<(number | null)[]>([]);
+  const userInputRef = useRef<Sequence>([]);
   const intervalRef = useRef<number>();
-  const intervalRefDuration = useRef<number>(1100);
+  const intervalRefDuration = useRef<number>(1000);
+  const { t } = useTranslation();
 
   function setNextTurn() {
     setTurn(0);
@@ -86,7 +124,7 @@ function SimonSaysBoard({
 
     userInputRef.current.push(...[tileIndex, null]);
 
-    if (userInputRef.current.length === 30) {
+    if (userInputRef.current.length === 20) {
       setStatus("win");
       return;
     }
@@ -96,22 +134,46 @@ function SimonSaysBoard({
     }
   }
 
+  const rules = t("GAME.RULES", { returnObjects: true }) as string[];
+
   return (
-    <>
-      <div>{turn === 0 ? "Watch the sequence" : "Repeat the sequence"}</div>
+    <div className={styles.boardWrapper}>
+      <div className={styles.rules}>
+        <div>
+          <p>
+            <b>{t("GAME.SEQUENCE_COUNT")}</b> {sequence.length / 2}
+          </p>
+          {turn === 0 && (
+            <p>
+              <b>{t("GAME.TURN")}</b> {rules[0]}
+            </p>
+          )}
+          {turn === 1 && (
+            <p>
+              <b>{t("GAME.TURN")}</b> {rules[1]}
+            </p>
+          )}
+        </div>
+        <button className={styles.button} type="button" onClick={restart}>
+          {t("GAME.RESTART")}
+        </button>
+      </div>
       <div className={styles.board}>
         {tiles.map((color, index) => (
           <button
             type="button"
             key={index}
-            className={isActive(index) ? styles.activeTile : styles.tile}
+            className={classNames({
+              [styles.tile]: true,
+              [styles.active]: isActive(index),
+            })}
             style={{ backgroundColor: color }}
             disabled={turn === 0 && !isActive(index)}
             onClick={() => userClick(index)}
           ></button>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
@@ -125,51 +187,40 @@ function setTileSequence(numbersToGenerate: number, numberOfTiles: number) {
 
 const COLORS: Record<string, string> = {
   aqua: "#00ffff",
-  azure: "#f0ffff",
-  beige: "#f5f5dc",
-  black: "#000000",
   blue: "#0000ff",
-  brown: "#a52a2a",
   cyan: "#00ffff",
-  darkblue: "#00008b",
-  darkcyan: "#008b8b",
-  darkgrey: "#a9a9a9",
-  darkgreen: "#006400",
-  darkkhaki: "#bdb76b",
-  darkmagenta: "#8b008b",
-  darkolivegreen: "#556b2f",
-  darkorange: "#ff8c00",
-  darkorchid: "#9932cc",
-  darkred: "#8b0000",
-  darksalmon: "#e9967a",
-  darkviolet: "#9400d3",
   fuchsia: "#ff00ff",
   gold: "#ffd700",
   green: "#008000",
-  indigo: "#4b0082",
   khaki: "#f0e68c",
   lightblue: "#add8e6",
   lightcyan: "#e0ffff",
   lightgreen: "#90ee90",
-  lightgrey: "#d3d3d3",
   lightpink: "#ffb6c1",
-  lightyellow: "#ffffe0",
-  lime: "#00ff00",
   magenta: "#ff00ff",
-  maroon: "#800000",
-  navy: "#000080",
   olive: "#808000",
   orange: "#ffa500",
   pink: "#ffc0cb",
-  purple: "#800080",
   violet: "#800080",
   red: "#ff0000",
-  silver: "#c0c0c0",
-  white: "#ffffff",
   yellow: "#ffff00",
 };
 function generateRandomColor() {
   const index = Math.floor(Math.random() * Object.keys(COLORS).length);
   const key = Object.keys(COLORS)[index];
   return COLORS[key];
+}
+
+function getTiles(numberOfTiles: number) {
+  const tiles: string[] = [];
+
+  for (let i = 0; i < numberOfTiles; i++) {
+    const color = generateRandomColor();
+    if (tiles.includes(color)) {
+      i--;
+      continue;
+    }
+    tiles.push(color);
+  }
+  return tiles;
 }
