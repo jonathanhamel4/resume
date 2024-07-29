@@ -167,7 +167,9 @@ function SimonSaysBoard({
               [styles.tile]: true,
               [styles.active]: isActive(index),
             })}
-            style={{ backgroundColor: color }}
+            style={{
+              background: `linear-gradient(90deg,rgb(255 255 255/50%),rgb(0 0 0/50%)), ${color}`,
+            }}
             disabled={turn === 0 && !isActive(index)}
             onClick={() => userClick(index)}
           ></button>
@@ -190,13 +192,7 @@ const COLORS: Record<string, string> = {
   blue: "#0000ff",
   cyan: "#00ffff",
   fuchsia: "#ff00ff",
-  gold: "#ffd700",
   green: "#008000",
-  khaki: "#f0e68c",
-  lightblue: "#add8e6",
-  lightcyan: "#e0ffff",
-  lightgreen: "#90ee90",
-  lightpink: "#ffb6c1",
   magenta: "#ff00ff",
   olive: "#808000",
   orange: "#ffa500",
