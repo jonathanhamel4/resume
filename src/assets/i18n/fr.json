@@ -91,5 +91,23 @@
       "DESC": "Fondée en 1892, Mission Bon Accueil est aujourd’hui la plus grande porte d’entrée pour venir en aide aux Montréalais les plus démunis. Une multitude de programmes sont offerts afin d’appuyer les itinérants, les jeunes filles-mères, les familles et les jeunes à risque. Nous redonnons l’espoir par des actions concrètes et des solutions efficaces."
     }
   },
-  "ABOUT": "Développeur logiciel gradué de l’Université Concordia en 2017 et enthousiasmé par Javascript. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nDéveloppeur web accompli ayant de l'expériences avec plusieurs outils et frameworks dont Angular, React, Node.js, Python, Docket ainsi qu'Ansible. J'adore résoudre des problèmes complexes à l'aide de solutions simples, évolutives, réutilisables et adaptées. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible.\n\nN'hésitez pas à me joindre!"
+  "ABOUT": "Développeur logiciel gradué de l’Université Concordia en 2017 et enthousiasmé par Javascript. Toujours à l’affut afin d’obtenir des opportunités d’apprentissages et de nouveaux défis. Passionné de nouvelles technologies et de leurs intégrations dans la vie de tous les jours. Beaucoup d’expérience dans le cycle de développement d’une application. Soit de l’obtention des prérequis et planification jusqu’au déploiement et tests.\n\nDéveloppeur web accompli ayant de l'expériences avec plusieurs outils et frameworks dont Angular, React, Node.js, Python, Docket ainsi qu'Ansible. J'adore résoudre des problèmes complexes à l'aide de solutions simples, évolutives, réutilisables et adaptées. L’approche Test Driven Development est une approche dont j’essaie de me conformer le plus possible.\n\nN'hésitez pas à me joindre!",
+  "GAME": {
+    "TURN": "Tour:",
+    "TITLE": "Super, vous avez lu jusqu'ici! Jouons une partie de 'Simon Dit'?",
+    "RULE_HEADER": "Les règles vont comme suit:",
+    "RULES": [
+      "Regardez la séquence",
+      "Répetez la séquence",
+      "Si vous obtenez 10 points, vous gagnez",
+      "Si vous cliquez sur le mauvais cercle, vous perdez"
+    ],
+    "START": "Débuter",
+    "WON": "Hey, vous avez gagné! Bravo :)",
+    "PLAY_AGAIN": "Jouez encore?",
+    "TRY_AGAIN": "Essayez de nouveau?",
+    "LOOSE": "Ah! Ça arrive :(",
+    "RESTART": "Redémarrer",
+    "SEQUENCE_COUNT": "Points:"
+  }
 }

@@ -11,6 +11,7 @@ import classNames from "classnames";
 import { Header } from "../header/header";
 
 import styles from "./layout.module.css";
+import { SimonSays } from "../simonsays/simonsays";
 
 export function Layout() {
   const scrolledRef = useRef(false);
@@ -41,6 +42,7 @@ export function Layout() {
             <Work />
             <Skills />
             <Volunteering />
+            <SimonSays />
           </div>
         </div>
         <Footer />
