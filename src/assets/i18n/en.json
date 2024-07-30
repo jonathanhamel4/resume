@@ -94,7 +94,7 @@
   "ABOUT": "Highly motivated Software Developer graduated from Concordia University in 2017 and a Javascript enthousiast. Always seeking for learning opportunities and new challenges. Passionate about technologies and how to integrate them in a real-world example. I have experience in all the application life cycle from eliciting requirements and planning to testing.\n\nExperienced web developer using a multitude of tools and frameworks such as Angular, React, Node.js, Python, Docker and Ansible. I love to solve complex problems with easy, reusable and maintainable solutions. Test Driven Development is an approach I try to conform to.\n\nDon't hesitate to reach out to me!",
   "GAME": {
     "TURN": "Turn:",
-    "TITLE": "Well done for making it here! Let's play a little game of Simon Says",
+    "TITLE": "Well done for making it here! Let's play a little game of Simon Says?",
     "RULE_HEADER": "The rules are as follow:",
     "RULES": [
       "Watch the sequence",
@@ -108,6 +108,7 @@
     "TRY_AGAIN": "Try again?",
     "LOOSE": "Ah! It happens :(",
     "RESTART": "Restart",
-    "SEQUENCE_COUNT": "Sequence count:"
+    "SEQUENCE_COUNT": "Sequence count:",
+    "LEVEL": "Level:"
   }
 }

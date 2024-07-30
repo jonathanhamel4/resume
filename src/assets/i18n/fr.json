@@ -108,6 +108,7 @@
     "TRY_AGAIN": "Essayez de nouveau?",
     "LOOSE": "Ah! Ça arrive :(",
     "RESTART": "Redémarrer",
-    "SEQUENCE_COUNT": "Points:"
+    "SEQUENCE_COUNT": "Points:",
+    "LEVEL": "Niveau:"
   }
 }

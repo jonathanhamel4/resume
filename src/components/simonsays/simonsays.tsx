@@ -20,42 +20,32 @@ export function SimonSays() {
 
   return (
     <SlideInCard>
-      <h3>{t("GAME.TITLE")}</h3>
       {!started && !status && (
-        <div>
-          <p>{t("GAME.RULE_HEADER")}</p>
-          <ul>
-            {rules.map((value, i) => (
-              <li key={i}>{value}</li>
-            ))}
-          </ul>
-          <button
-            className={styles.button}
-            type="button"
-            onClick={() => setStarted(true)}
-          >
-            {t("GAME.START")}
-          </button>
-        </div>
+        <>
+          <h3>{t("GAME.TITLE")}</h3>
+          <div>
+            <p>{t("GAME.RULE_HEADER")}</p>
+            <ul>
+              {rules.map((value, i) => (
+                <li key={i}>{value}</li>
+              ))}
+            </ul>
+            <button
+              className={styles.button}
+              type="button"
+              onClick={() => setStarted(true)}
+            >
+              {t("GAME.START")}
+            </button>
+          </div>
+        </>
       )}
-      {started && !status && (
-        <SimonSaysBoard setStatus={setStatus} restart={restart} />
-      )}
-      {status === "win" && (
-        <div>
-          <p>{t("GAME.WON")}</p>
-          <button type="button" onClick={restart}>
-            {t("GAME.PLAY_AGAIN")}
-          </button>
-        </div>
-      )}
-      {status === "loose" && (
-        <div>
-          <p>{t("GAME.LOOSE")}</p>
-          <button type="button" onClick={restart}>
-            {t("GAME.TRY_AGAIN")}
-          </button>
-        </div>
+      {started && (
+        <SimonSaysBoard
+          setStatus={setStatus}
+          restart={restart}
+          status={status}
+        />
       )}
     </SlideInCard>
   );
@@ -65,9 +55,11 @@ type Sequence = (number | null)[];
 
 function SimonSaysBoard({
   setStatus,
+  status,
   restart,
 }: {
   setStatus: Dispatch<SetStateAction<"win" | "loose" | null>>;
+  status: "win" | "loose" | null;
   restart(): void;
 }) {
   const [tiles] = useState(getTiles(NUMBER_OF_TILES));
@@ -89,7 +81,7 @@ function SimonSaysBoard({
   }
 
   useEffect(() => {
-    if (sequenceStarted.current || turn !== 0) {
+    if (sequenceStarted.current || turn !== 0 || status !== null) {
       return;
     }
     sequenceStarted.current = true;
@@ -108,7 +100,7 @@ function SimonSaysBoard({
         return active + 1;
       });
     }, intervalRefDuration.current);
-  }, [sequence]);
+  }, [sequence, status]);
 
   function isActive(index: number) {
     return activeTile != null && index === sequence[activeTile];
@@ -119,6 +111,7 @@ function SimonSaysBoard({
 
     if (sequence[indexToLookUp] !== tileIndex) {
       setStatus("loose");
+      setTurn(0);
       return;
     }
 
@@ -126,6 +119,7 @@ function SimonSaysBoard({
 
     if (userInputRef.current.length === 20) {
       setStatus("win");
+      setTurn(0);
       return;
     }
 
@@ -134,31 +128,49 @@ function SimonSaysBoard({
     }
   }
 
-  const rules = t("GAME.RULES", { returnObjects: true }) as string[];
-
   return (
     <div className={styles.boardWrapper}>
-      <div className={styles.rules}>
-        <div>
-          <p>
-            <b>{t("GAME.SEQUENCE_COUNT")}</b> {sequence.length / 2}
-          </p>
-          {turn === 0 && (
-            <p>
-              <b>{t("GAME.TURN")}</b> {rules[0]}
-            </p>
-          )}
-          {turn === 1 && (
-            <p>
-              <b>{t("GAME.TURN")}</b> {rules[1]}
-            </p>
-          )}
-        </div>
-        <button className={styles.button} type="button" onClick={restart}>
-          {t("GAME.RESTART")}
-        </button>
+      <div className={styles.controls}>
+        <p className={styles.levels}>
+          {t("GAME.LEVEL")} {sequence.length / 2}
+        </p>
+        {status === null && (
+          <button className={styles.button} type="button" onClick={restart}>
+            {t("GAME.RESTART")}
+          </button>
+        )}
+        {status === "win" && (
+          <div style={{ display: "flex" }}>
+            <p>{t("GAME.WON")}</p>
+            <button
+              className={styles.unStyledButton}
+              type="button"
+              onClick={restart}
+            >
+              {t("GAME.PLAY_AGAIN")}
+            </button>
+          </div>
+        )}
+        {status === "loose" && (
+          <div style={{ display: "flex" }}>
+            <p>{t("GAME.LOOSE")}</p>
+            <button
+              className={styles.unStyledButton}
+              type="button"
+              onClick={restart}
+            >
+              {t("GAME.TRY_AGAIN")}
+            </button>
+          </div>
+        )}
       </div>
       <div className={styles.board}>
+        <div
+          className={classNames({
+            [styles.overlay]: true,
+            [styles.overlayVisible]: turn === 0,
+          })}
+        ></div>
         {tiles.map((color, index) => (
           <button
             type="button"
