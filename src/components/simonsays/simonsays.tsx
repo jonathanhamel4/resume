@@ -6,10 +6,13 @@ import { useTranslation } from "react-i18next";
 
 const NUMBER_OF_TILES = 6;
 
+type Status = "win" | "loose" | null;
+type Sequence = (number | null)[];
+
 export function SimonSays() {
   const { t } = useTranslation();
   const [started, setStarted] = useState(false);
-  const [status, setStatus] = useState<"win" | "loose" | null>(null);
+  const [status, setStatus] = useState<Status>(null);
 
   const rules = t("GAME.RULES", { returnObjects: true }) as string[];
 
@@ -51,15 +54,13 @@ export function SimonSays() {
   );
 }
 
-type Sequence = (number | null)[];
-
 function SimonSaysBoard({
   setStatus,
   status,
   restart,
 }: {
-  setStatus: Dispatch<SetStateAction<"win" | "loose" | null>>;
-  status: "win" | "loose" | null;
+  setStatus: Dispatch<SetStateAction<Status>>;
+  status: Status;
   restart(): void;
 }) {
   const [tiles] = useState(getTiles(NUMBER_OF_TILES));
