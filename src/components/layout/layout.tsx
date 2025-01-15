@@ -11,7 +11,8 @@ import classNames from "classnames";
 import { Header } from "../header/header";
 
 import styles from "./layout.module.css";
-import { SimonSays } from "../simonsays/simonsays";
+// import { SimonSays } from "../simonsays/simonsays";
+import { Game2048 } from "../game2048/Game2048";
 
 export function Layout() {
   const scrolledRef = useRef(false);
@@ -42,7 +43,7 @@ export function Layout() {
             <Work />
             <Skills />
             <Volunteering />
-            <SimonSays />
+            <Game2048 />
           </div>
         </div>
         <Footer />
